@@ -97,7 +97,7 @@ class Home extends Component{
         <div className="card-body">
           <h5 className="card-title"> <b>Phones</b> </h5> 
           <p className="card-text text-center"> "Find the best phone which meets your required needs with our approved  guidance"</p>  <div classname="wrapper-btn">
-            <button type="button" className="btn btn-lg btn-outline-secondary mainbtn">Find!</button>
+           <a className="phn" href="/phones"> <button type="button"  className="btn btn-lg btn-outline-secondary mainbtn">Find!</button></a>
           </div> 
         </div> 
       </div>
