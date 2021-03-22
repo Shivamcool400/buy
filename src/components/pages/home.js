@@ -12,7 +12,7 @@ class Home extends Component{
     </blockquote>
   </figure>
   <div><br /><br /></div>
-  <div><br /><br /></div>
+  
   <div className="row">
     <div className="col">
     </div>
