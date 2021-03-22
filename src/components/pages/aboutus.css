@@ -14,6 +14,7 @@
     height: 300px;
     display: block;
     padding: 0;
+    border-radius: 10px;
   }
 
   .image2 {
@@ -21,6 +22,7 @@
     height: 350px;
     display: block;
     padding: 0;
+    border-radius: 10px;
   }
 
   .image3 {
@@ -28,6 +30,7 @@
     height: 300px;
     display: block;
     padding: 0;
+    border-radius: 10px;
   }
   
   

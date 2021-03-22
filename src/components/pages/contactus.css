@@ -14,18 +14,22 @@ legend {
     text-align: center;
 }
 
+.input {
+    margin-bottom: 20px;
+}
+
 .left {
     width: 50%;
 }
 
-.btn2 {
+.btnmessage {
     background-color: rgba(255, 0, 0, 0.562);
     color: white;
     margin-top: 25px;
     border-radius: 5px;
 }
 
-.btn2:hover {
+.btnmessage:hover {
     color: white;
     background-color: rgba(255, 0, 0, 0.662);
 }
