@@ -10,9 +10,9 @@ class Aboutus extends Component{
             <div class="box">
       
               <div class="item1">
-                <span>
+                <div>
                   <img src="/ourvision.jpg" alt="Our Vision" class="image" />
-                </span>
+                </div>
                 <div class="para1">
                   <h3>Our Vision</h3>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus eum laudantium eos, dolorem soluta facilis officiis culpa excepturi atque sunt consectetur recusandae eveniet doloremque corporis labore aliquam inventore in quis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim repudiandae iusto quis. Omnis voluptate quidem sint veniam, dolorem aliquam accusantium totam. Reprehenderit dolores facilis beatae tenetur, autem perspiciatis amet temporibus?</p>
