@@ -22,7 +22,7 @@ class Contactus extends Component{
                             <div class="form-group">
                                 <textarea class="form-control" rows="5" id="message" placeholder="Enter your message here..."></textarea>
                             </div>
-                            <button className="btn">Submit</button>
+                            <button className="btn2">Submit</button>
                         </fieldset>
                     </form>
                 </div>

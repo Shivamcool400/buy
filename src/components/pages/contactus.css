@@ -18,14 +18,14 @@ legend {
     width: 50%;
 }
 
-.btn {
+.btn2 {
     background-color: rgba(255, 0, 0, 0.562);
     color: white;
     margin-top: 25px;
     border-radius: 5px;
 }
 
-.btn:hover {
+.btn2:hover {
     color: white;
     background-color: rgba(255, 0, 0, 0.662);
 }
@@ -56,7 +56,7 @@ a:hover {
 
 
 @media screen and (max-width: 800px) and (min-width: 550px) {
-    .box {
+    .box2 {
         display: block;
         margin-top: 50px;
     }
@@ -92,7 +92,7 @@ a:hover {
 }
 
 @media screen and (max-width: 549px) {
-    .box {
+    .box2 {
         display: block;
         margin-top: 50px;
     }
@@ -128,7 +128,7 @@ a:hover {
 }
 
 @media screen and (max-width: 380px) {
-    .box {
+    .box2 {
         display: block;
         margin-top: 50px;
     }
