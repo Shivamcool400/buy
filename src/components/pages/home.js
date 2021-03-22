@@ -57,94 +57,66 @@ class Home extends Component{
             </div>
             
             < div className = "row" >
-                <
-                div className = "col" > < /div> <
-                div className = "col-sm-12 col-md-4" >
+                <div className = "col" > < /div>
+            <div className = "col-sm-12 col-md-4" >
 
-                <
-                div className = "card m-3 " >
-               <
-                div className = "card-body" >
-                <
-                blockquote className = "blockquote mb-0" >
-                <
-                p > "Finding a desired phone these days is difficult and time consuming < /p> <
-                footer className = "blockquote-footer " > "Rohit Mishra" < cite title = "Source Title" >  < /cite></footer >
-                <
-                /blockquote> <
-                /div> <
-                /div>
+                <div className = "card m-3 " >
+               <div className = "card-body" >
+                <blockquote className = "blockquote mb-0" >
+                < p > "Finding a desired phone these days is difficult and time consuming < /p> 
+            <footer className = "blockquote-footer " > "Rohit Mishra" < cite title = "Source Title" >  < /cite></footer >
+                </blockquote> 
+            </div> 
+            </div>
 
-                <
-                /div> <
-                div className = "col-sm-12 col-md-4" >
+                </div>
+            <div className = "col-sm-12 col-md-4" >
 
-                <
-                div className = "card m-3 " >
-                <
-                div className = "card-body" >
-                <
-                blockquote className = "blockquote mb-0" >
-                <
-                p > "I needed a gaming phone under 20,000, but found the wrong one!"   < /p> <
-                footer className = "blockquote-footer" > "Rakesh Goyal < cite title = "Source Title" >  < /cite></footer >
-                <
-                /blockquote> <
-                /div> <
-                /div>
+                < div className = "card m-3 " >
+                <div className = "card-body" >
+                <blockquote className = "blockquote mb-0" >
+                < p > "I needed a gaming phone under 20,000, but found the wrong one!"   < /p> 
+            <footer className = "blockquote-footer" > "Rakesh Goyal < cite title = "Source Title" >  < /cite></footer >
+                </blockquote>
+            </div> 
+            </div>
 
-                <
-                /div>  <
-                div className = "col" > < /div>
+                </div>  
+            <div className = "col" > < /div>
 
-                <
-                /div>
+                </div>
                     
                     
                     
                     < div className = "row" >
-                <
-                div className = "col" > < /div> <
-                div className = "col-sm-12 col-md-4" >
+                <div className = "col" > < /div> 
+            <div className = "col-sm-12 col-md-4" >
 
-                <
-                div className = "card m-3" >
-               <
-                div className = "card-body" >
-                <
-                blockquote className = "blockquote mb-0" >
-                <
-                p > "Searched thousand of videos on youtube, but which one to follow to buy a laptop" < /p> <
-                footer className = "blockquote-footer" > "Preeti Chauhan" < cite title = "Source Title" >  < /cite></footer >
-                <
-                /blockquote> <
-                /div> <
-                /div>
+                <div className = "card m-3" >
+               <div className = "card-body" >
+                < blockquote className = "blockquote mb-0" >
+                <p > "Searched thousand of videos on youtube, but which one to follow to buy a laptop" < /p> 
+            <footer className = "blockquote-footer" > "Preeti Chauhan" < cite title = "Source Title" >  < /cite></footer >
+                </blockquote> 
+            </div> 
+            </div>
 
-                <
-                /div> <
-                div className = "col-sm-12 col-md-4" >
+                </div> 
+            <div className = "col-sm-12 col-md-4" >
 
-                <
-                div className = "card m-3" >
-               <
-                div className = "card-body" >
-                <
-                blockquote className = "blockquote mb-0" >
-                <
-                p > "Can't find the cheapest website to get my phone in a fairer price" < /p> <
-                footer className = "blockquote-footer" >"Laksaya Anand"< cite title = "Source Title" >< /cite></footer >
-                <
-                /blockquote> <
-                /div> <
-                /div>
+                <div className = "card m-3" >
+               <div className = "card-body" >
+                <blockquote className = "blockquote mb-0" >
+                <p > "Can't find the cheapest website to get my phone in a fairer price" < /p> 
+            <footer className = "blockquote-footer" >"Laksaya Anand"< cite title = "Source Title" >< /cite></footer >
+                </blockquote>
+            </div> 
+            </div>
 
-                <
-                /div>  <
-                div className = "col" > < /div>
+                </div>  
+            <div className = "col" > < /div>
 
-                <
-                /div>
+                </div>
                     
                     
                     
@@ -185,104 +157,77 @@ class Home extends Component{
                     </div>
                     
                     < div className = "row" >
-                        <
-                        div className = "col" > < /div> <
-                    div className = "col-sm-12 col-md-4" >
-                        <
-                        div className = "card m-3" >
-                        <
-                        img src = "/phone.jpg"
+                        <div className = "col" > < /div> 
+            <div className = "col-sm-12 col-md-4" >
+                        < div className = "card m-3" >
+                        <img src = "/phone.jpg"
                     className = "card-img-top "
                     alt = "..." / >
-                        <
-                        div className = "card-body" >
-                        <
-                        h5 className = "card-title" > <b>Phones</b> < /h5> <
-                        p className = "card-text text-center" > "Find the best phone which meets your required needs with our approved  guidance"</p>  <div className="wrapper-btn">
+                        <div className = "card-body" >
+                        <h5 className = "card-title" > <b>Phones</b> < /h5>
+            <p className = "card-text text-center" > "Find the best phone which meets your required needs with our approved  guidance"</p>  <div className="wrapper-btn">
       <button type="button" className="btn btn-lg btn-outline-secondary mainbtn">Find!</button>
-    </div> <
-                        /div> <
-                        /div>
+    </div> </div>
+          </div>
 
 
-                        <
-                        /div> <
-                    div className = "col-sm-12 col-md-4" >
-                        <
-                        div className = "card m-3" >
-                        <
-                        img src = "/gamingconsole.jpg"
+                        </div> 
+            <div className = "col-sm-12 col-md-4" >
+                        <div className = "card m-3" >
+                        <img src = "/gamingconsole.jpg"
                     className = "card-img-top"
                     alt = "..." / >
-                        <
-                        div className = "card-body" >
-                        <
-                        h5 className = "card-title" > <b> Gaming Consoles</b> < /h5> <
-                        p className = "card-text text-center" > "Winner winner chicken dinner!! True gamers always require  relevant choices."</p>
+                        <div className = "card-body" >
+                        < h5 className = "card-title" > <b> Gaming Consoles</b> < /h5> 
+            <p className = "card-text text-center" > "Winner winner chicken dinner!! True gamers always require  relevant choices."</p>
                             <div className="wrapper-btn">
       <button type="button" className="btn btn-lg btn-outline-secondary mainbtn">Find!</button>
-    </div>  <
-                        /div> <
-                        /div>
+    </div> 
+            </div>
+            </div>
 
 
-                        <
-                        /div> <
-                    div className = "col" > < /div>
+                        </div> 
+            <div className = "col" > < /div>
 
-                        <
-                        /div>
+                        </div>
                             
                              < div className = "row" >
-                        <
-                        div className = "col" > < /div> 
-                            <
-                    div className = "col-sm-12 col-md-4" >
-                        <
-                        div className = "card m-3" >
-                        <
-                        img src = "/laptop.jpg"
+                        <div className = "col" > < /div> 
+                            <div className = "col-sm-12 col-md-4" >
+                        <div className = "card m-3" >
+                        <img src = "/laptop.jpg"
                     className = "card-img-top "
                     alt = "..." / >
-                        <
-                        div className = "card-body" >
-                        <
-                        h5 className = "card-title" > <b>Laptops</b> < /h5> <
-                        p className = "card-text text-center" > "Find a genuine laptop for youself"</p> 
+                        <div className = "card-body" >
+                        <h5 className = "card-title" > <b>Laptops</b>  </h5> 
+            <p className = "card-text text-center" > "Find a genuine laptop for youself"</p> 
                             <div className="wrapper-btn">
       <button type="button" className="btn btn-lg btn-outline-secondary mainbtn">Find!</button>
-    </div>  <
-                        /div> <
-                        /div>
+    </div>  
+            </div> 
+            </div>
 
 
-                        <
-                        /div> <
-                    div className = "col-sm-12 col-md-4" >
-                        <
-                        div className = "card m-3" >
-                        <
-                        img src = "/accesories.jpg"
+                        </div> 
+            <div className = "col-sm-12 col-md-4" >
+                        <div className = "card m-3" >
+                        <img src = "/accesories.jpg"
                     className = "card-img-top"
                     alt = "..." / >
-                        <
-                        div className = "card-body" >
-                        <
-                        h5 className = "card-title" > <b>Accessories</b> < /h5> <
-                        p className = "card-text text-center" >"Finding the thing which is right for u buddy!</p>
+                        <div className = "card-body" >
+                        <h5 className = "card-title" > <b>Accessories</b> </h5> 
+            <p className = "card-text text-center" >"Finding the thing which is right for u buddy!</p>
                              <div className="wrapper-btn">
       <button type="button" className="btn btn-lg btn-outline-secondary mainbtn">Find!</button>
-    </div>  <
-                        /div> <
-                        /div>
+    </div>  </div> 
+            </div>
 
 
-                        <
-                        /div>  <
-                    div className = "col" > < /div>
+                        </div>  
+            <div className = "col" > < /div>
 
-                        <
-                        /div>
+                        </div>
 
         
            
