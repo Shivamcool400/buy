@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-class Subscribeus extends Component{
+class Contactus extends Component{
     render() {
         return(
         
@@ -11,4 +11,4 @@ class Subscribeus extends Component{
         
 
 
-export default Subscribeus ;
+export default Contactus ;
