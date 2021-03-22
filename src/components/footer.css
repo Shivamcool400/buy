@@ -1,0 +1,15 @@
+h5{
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: black;
+    
+}
+
+.fa {
+    color: black;
+    display:flex;
+    justify-content: center;
+    padding-top: 20px;
+    
+}

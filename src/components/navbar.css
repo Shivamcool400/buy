@@ -1,0 +1,120 @@
+ @font-face {
+    font-family: 'SamsungOne 700';
+    font-style: normal;
+    font-weight: normal;
+    src: local('SamsungOne 700'), url('SamsungOne-700.woff') format('woff');
+    }
+    
+
+
+.nav-item {
+    
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    font-family: 'SamsungOne 700';
+    font-weight: 700;
+    font-size: 18px;
+    
+    
+}
+.navbar-nav {
+    margin-left: 50px;
+}
+
+
+.navbar-brand {
+    
+    color: black;
+    font-weight: bold;
+}
+
+.abc:hover {
+    background-color: black;
+    color: white;
+    -moz-border-radius: 15px; -webkit-border-radius: 15px; border-radius: 15px;
+}
+
+.abc:hover .nav-link {
+    color: white;
+}
+.nav-link {
+    color: black;
+}
+@media only screen and (max-width: 540px) {
+    .navbar-nav {
+        margin-right: 50px; 
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*.section{
+        position: relative;
+        width: 100%;
+        height: 350px;
+       
+        align-items: center;
+        justify-self: center;
+        overflow: hidden;
+
+    }
+  
+        
+.section nav
+{
+                z-index: 2;
+                padding: -30px;
+            }
+
+.video-container{
+                position: absolute;
+                top: 0;
+                z-index: -1;
+                left: 0;
+                width: 100%;
+            }
+.section img
+             {
+              margin-left: 32rem;
+            }*/
+
+
+

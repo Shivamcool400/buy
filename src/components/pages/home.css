@@ -1,0 +1,247 @@
+.row{
+    margin-left: 0;
+    margin-right: 0;
+}
+  @font-face {
+    font-family: 'SamsungOne 400';
+    font-style: normal;
+    font-weight: normal;
+    src: local('SamsungOne 400'), url('SamsungOne-400.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'SamsungOne 700';
+    font-style: normal;
+    font-weight: normal;
+    src: local('SamsungOne 700'), url('SamsungOne-700.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Samsung Sharp Sans Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Samsung Sharp Sans Bold'), url('SamsungSharpSans-Bold.woff') format('woff');
+    }
+ @font-face {
+    font-family: 'Samsung Sharp Sans Regular Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Samsung Sharp Sans Regular Regular'), url('./SamsungSharpSansRegular-Regular.woff') format('woff');
+    }
+
+ 
+
+    @font-face {
+    font-family: 'SamsungSharpSans-Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('SamsungSharpSans-Bold'), url('./samsung_s_sharp_by_629lyric-d8y77l9.woff') format('woff');
+    }
+
+
+
+
+img.rounded.mx-auto.d-block.img-fluid.headshot.mt-5 {
+    padding-bottom: 0;
+}
+
+.arrangement {
+    display: block;
+    margin: auto;
+}
+
+
+
+.msg-1 {
+      color:darkgrey;
+    display: block;
+    text-align: center;
+    font-family: 'SamsungOne 700';
+    font-size: 18px;
+    font-weight: 400;
+    /*text-decoration: underline;*/
+    
+    
+}
+.msg {
+    
+   /*margin-top: 10%; */
+    color:black;
+    display: block;
+    text-align: center;
+    font-family: 'SamsungOne 700';
+    font-size: 18px;
+    
+    
+   
+ }
+
+.blockquote {
+    color:black;
+    display: block;
+    text-align: center;
+    font-family: 'SamsungOne 400';
+    font-size: 18px;
+    
+    
+}
+.text_heading {
+    margin-top: 10%; 
+    color:black;
+    display: block;
+    text-align: center;
+ font-family: SamsungSharpSans-Bold  ;
+    
+   font-size: 38px;
+}
+.card.m-3 {
+    background:#FFFAFA;
+    
+}
+
+.card-title {
+    font-family:SamsungSharpSans-Bold   ;
+    
+   font-size: 20px;
+}
+
+p.card-text.text-center {
+    font-family: 'SamsungOne 700';
+}
+
+.abc :hover {
+    color: darkgrey;
+    text-decoration: underline;
+}
+
+
+.ques {
+ color: aliceblue;
+text-align: center;
+    }
+.wrapper-btn {
+margin-top: 20px;
+}
+
+button.mainbtn {
+    background:black;
+    color: white;
+    display: block;
+    margin:auto;
+    }
+
+
+@media only screen and (max-width: 430px) {
+  .msg {
+      font-size: 25px;
+  }
+    
+    .ques {
+        font-size: 35px;
+    }
+    .msg-small {
+        margin-top: 1%;
+    }
+    .text_heading {
+    margin-top: 10%;
+    font-family: SamsungSharpSans-Bold;
+    font-size: 20px;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*bubble*/
+.thought {
+  display:flex;
+  background-color:bisque;
+  padding:20px;
+  border-radius:30px;
+  min-width:40px;
+  max-width:220px;
+  min-height:40px;
+ /* margin:20px;*/
+  margin-top: 50px;
+  position:relative;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+}
+.thought:before,
+.thought:after {
+  content:"";
+  background-color:bisque;
+  border-radius:50%;
+  display:block;
+  position:absolute;
+  z-index:-1;
+}
+.thought:before {
+  width:44px;
+  height:44px;
+  top:-12px;
+  left:28px;
+  box-shadow:-50px 30px 0 -12px bisque;
+}
+.thought:after {
+  bottom:-10px;
+  right:26px;
+  width:30px;
+  height:30px;
+  box-shadow:40px -34px 0 0 bisque,
+             -28px -6px 0 -2px bisque,
+             -24px 17px 0 -6px bisque,
+             -5px 25px 0 -10px bisque;
+  
+}
+/**/
+
