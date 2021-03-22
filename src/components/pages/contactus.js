@@ -5,9 +5,9 @@ class Contactus extends Component{
     render() {
         return(
         
-        <div className="body">
+        <div className="body2">
             <h1 className="head"> Contact Us</h1>
-            <div className="box">
+            <div className="box2">
                 <div className="left">
                     <form method="" action="/contactus">
                         <fieldset>

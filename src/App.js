@@ -3,7 +3,6 @@ import Navbar from './components/navbar';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import Home from './components/pages/home';
 import Aboutus from './components/pages/aboutus';
-import Subscribeus from './components/pages/contactus';
 import Login from './components/pages/login';
 import Footer from './components/footer';
 import Contactus from './components/pages/contactus';
