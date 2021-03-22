@@ -7,6 +7,7 @@ import Subscribeus from './components/pages/contactus';
 import Login from './components/pages/login';
 import Footer from './components/footer';
 import Contactus from './components/pages/contactus';
+import Phones from './components/pages/phone';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
                   <Route path='/contactus'  component={Contactus} />
                   <Route path='/home'  component={Home} />
                   <Route path='/login'  component={Login} />
+                  <Route path='/phones'  component={Phones} />
                
               
               </Switch>
