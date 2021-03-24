@@ -109,7 +109,7 @@ class Home extends Component{
           <h5 className="card-title"> <b> Gaming Consoles</b> </h5> 
           <p className="card-text text-center"> "Winner winner chicken dinner!! True gamers always require  relevant choices."</p>
           <div className="wrapper-btn">
-            <button type="button" className="btn btn-lg btn-outline-secondary mainbtn">Find!</button>
+          <a className="phn" href="/gamingconsoles"><button type="button" className="btn btn-lg btn-outline-secondary mainbtn">Find!</button></a>
           </div></div> 
       </div>
     </div> 
@@ -134,7 +134,7 @@ class Home extends Component{
           <h5 className="card-title"> <b>Accessories</b> </h5> 
           <p className="card-text text-center">"Finding the thing which is right for u buddy!</p>
           <div className="wrapper-btn">
-            <button type="button" className="btn btn-lg btn-outline-secondary mainbtn">Find!</button>
+          <a className="phn" href="/accessories"><button type="button" className="btn btn-lg btn-outline-secondary mainbtn">Find!</button></a>
           </div></div> </div>
     </div>  <div className="col"> </div>
   </div>

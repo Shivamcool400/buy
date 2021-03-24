@@ -8,6 +8,8 @@ import Footer from './components/footer';
 import Contactus from './components/pages/contactus';
 import Phones from './components/pages/phone';
 import Laptops from './components/pages/laptop';
+import GamingConsoles from './components/pages/gamingconsole';
+import Accessories from './components/pages/accessories';
 
 function App() {
   return (
@@ -23,6 +25,8 @@ function App() {
                   <Route path='/login'  component={Login} />
                   <Route path='/phones'  component={Phones} />
                   <Route path='/laptops' component={Laptops} />
+                  <Route path='/gamingconsoles' component={GamingConsoles} />
+                  <Route path='/accessories' component={Accessories} />
                
               
               </Switch>
