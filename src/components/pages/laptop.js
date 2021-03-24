@@ -103,18 +103,75 @@ class Laptops extends Component{
         <br></br>
         <br></br>
 
-        <div className="container" className="back-2">
+        <div className="container" className="back-2 bg-dark">
             
+            <figure className="text-center ">
+          <blockquote className="blockquote ">
+            <h2 className="msg-heading text-light">BUY EXPERTS</h2>
+          </blockquote>
+        </figure>
         <figure className="text-center ">
-      <blockquote className="blockquote ">
-        <h2 className="msg-heading text-dark">BUY EXPERTS</h2>
-      </blockquote>
-    </figure>
+        <blockquote className="blockquote ">
+          <p className="h1 msg-3 text-white">Always Working on Providing The best Support To Our Users And The Subscribers. We Are Commited To You And Will Not Leave Any Stone Unturned Until You Find A Phone Meeting Your Desired Needs.</p>
+        </blockquote>
+      </figure>
+    <br></br>
+    <br></br>
+            </div>
+           
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+           
+    
+           <div className="container" className="shift">
+        <figure className="text-center ">
+          <blockquote className="blockquote ">
+            <h2 className="heading-2">Looking for something else ?</h2>
+          </blockquote>
+        </figure>
+      </div>
+    <br></br>
+    <br></br>
+      <div className="row">
+    
+    <div className="col-sm-12 col-md-4">
+    <div className="card-body">
+              <h5 className="card-title heading"> <b> Gaming Consoles</b> </h5> 
+              <p className="card-text text-center"> "Winner winner chicken dinner!! True gamers always require  relevant choices."</p>
+              <div className="wrapper-btn">
+                <button type="button" className="btn btn-lg btn-outline-secondary mainbtn">Find!</button>
+              </div></div> 
+    </div>
+    <div className="col-sm-12 col-md-4">
+    <div className="card-body">
+          <h5 className="card-title heading"> <b>Phones</b> </h5> 
+          <p className="card-text text-center"> "Find the best phone which meets your required needs with our approved  guidance"</p>  <div classname="wrapper-btn">
+           <a className="phn" href="/phones"> <button type="button"  className="btn btn-lg btn-outline-secondary mainbtn">Find!</button></a>
+          </div> 
+        </div> 
+    </div>
+    <div className="col-sm-12 col-md-4">
+    <div className="card-body">
+              <h5 className="card-title heading"> <b>Accessories</b> </h5> 
+              <p className="card-text text-center">"Finding the thing which is right for u buddy!</p>
+              <div className="wrapper-btn">
+                <button type="button" className="btn btn-lg btn-outline-secondary mainbtn">Find!</button>
+              </div></div>
+    </div>
+    
+    
+    </div>
+    
+    <br></br>
+    <br></br>
+    
             
 
         </div>
 
-        </div>
+        
          
        
         

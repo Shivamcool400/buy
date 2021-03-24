@@ -69,9 +69,30 @@
        margin-top: 10px;
        text-align: center;
         }
+        .msg-3 {
+            color:white;
+          display: block;
+          text-align: center;
+          font-family: 'SamsungOne 400';
+          font-size: 18px;
+          font-weight: 400;
+          padding-right: 8%;
+          padding-left: 8%;
+          
+          }
+.heading-2 {
+            display: block;
+            text-align: center;
+         font-family: SamsungSharpSans-Bold  ;
+         font-size: 38px;
+          }
 
-        .back-2 {
-            background-color: #4d4c4c;
-            
+.container .shift {
+    margin-top: 0;
+}
 
-        }
+.heading {
+    font-size: 25px;
+}
+
+       
