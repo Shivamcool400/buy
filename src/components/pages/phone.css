@@ -49,13 +49,15 @@
         color: white;
     }
     .msg-heading {
-        /* margin-top: 10%; */ 
+        /* margin-top: 10%; */
+ 
         color:white;
         display: block;
         text-align: center;
      font-family: SamsungSharpSans-Bold  ;
      font-size: 38px;
      padding-top: 5%;
+     padding-bottom: 4%;
     }
     button.find-btn {
         background-color:black;
@@ -96,4 +98,9 @@
 
     .heading {
         font-size: 25px;
+    }
+
+
+    .image {
+        margin-bottom: 3%;
     }

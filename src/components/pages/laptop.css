@@ -95,4 +95,10 @@
     font-size: 25px;
 }
 
-       
+.image {
+    margin-bottom: 3%;
+}
+
+img {
+    padding: 0;
+}

@@ -76,27 +76,27 @@ class Laptops extends Component{
       </blockquote>
     </figure>
         <div className="row">
-          <div className="col-sm-12 col-md-4">
-          <img src="/dell.png" className="rounded mx-auto d-block w-100 h-75" alt="..." />
+          <div className="col-sm-12 col-md-4 image">
+          <img src="/dell.png" className="rounded mx-auto d-block w-40 h-50" alt="..." />
 
           </div>
-          <div className="col-sm-12 col-md-4">
-          <img src="/samsung.png" className="rounded mx-auto d-block w-100 h-75" alt="..." />
+          <div className="col-sm-12 col-md-4 image">
+          <img src="/samsung.png" className="rounded mx-auto d-block w-50 h-70" alt="..." />
           </div>
-          <div className="col-sm-12 col-md-4">
-          <img src="/apple.png" className="rounded mx-auto d-block w-100 h-75" alt="..." />
+          <div className="col-sm-12 col-md-4 image">
+          <img src="/apple.png" className="rounded mx-auto d-block w-50 h-70" alt="..." />
           </div>
         </div>
 
         <div className="row">
-          <div className="col-sm-12 col-md-4">
-          <img src="/hp.png" className="rounded mx-auto d-block w-100 h-75" alt="..." />
+          <div className="col-sm-12 col-md-4 image">
+          <img src="/hp.png" className="rounded mx-auto d-block w-50 h-70" alt="..." />
           </div>
-          <div className="col-sm-12 col-md-4">
-          <img src="/lenovo.png" className="rounded mx-auto d-block w-100 h-75" alt="..." />
+          <div className="col-sm-12 col-md-4 image">
+          <img src="/lenovo.png" className="rounded mx-auto d-block w-50 h-70" alt="..." />
           </div>
-          <div className="col-sm-12 col-md-4">
-          <img src="/acer.png" className="rounded mx-auto d-block w-100 h-75" alt="..." />
+          <div className="col-sm-12 col-md-4 image">
+          <img src="/acer.png" className="rounded mx-auto d-block w-50 h-70" alt="..." />
           </div>
         </div>
 
