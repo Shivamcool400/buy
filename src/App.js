@@ -7,6 +7,7 @@ import Login from './components/pages/login';
 import Footer from './components/footer';
 import Contactus from './components/pages/contactus';
 import Phones from './components/pages/phone';
+import Laptops from './components/pages/laptop';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
                   <Route path='/home'  component={Home} />
                   <Route path='/login'  component={Login} />
                   <Route path='/phones'  component={Phones} />
+                  <Route path='/laptops' component={Laptops} />
                
               
               </Switch>

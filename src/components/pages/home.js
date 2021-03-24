@@ -124,7 +124,7 @@ class Home extends Component{
           <h5 className="card-title"> <b>Laptops</b> </h5> 
           <p className="card-text text-center"> "Find a genuine laptop for youself"</p> 
           <div className="wrapper-btn">
-            <button type="button" className="btn btn-lg btn-outline-secondary mainbtn">Find!</button>
+          <a className="phn" href="/laptops"><button type="button" className="btn btn-lg btn-outline-secondary mainbtn">Find!</button></a>
           </div> </div> </div>
     </div> 
     <div className="col-sm-12 col-md-4">
