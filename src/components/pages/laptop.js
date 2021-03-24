@@ -90,13 +90,13 @@ class Laptops extends Component{
 
         <div className="row">
           <div className="col-sm-12 col-md-4 image">
-          <img src="/hp.png" className="rounded mx-auto d-block w-50 h-70" alt="..." />
+          <img src="/hp.png" className="rounded mx-auto d-block w-40 h-60" alt="..." />
           </div>
           <div className="col-sm-12 col-md-4 image">
-          <img src="/lenovo.png" className="rounded mx-auto d-block w-50 h-70" alt="..." />
+          <img src="/lenovo.png" className="rounded mx-auto d-block w-40 h-60" alt="..." />
           </div>
           <div className="col-sm-12 col-md-4 image">
-          <img src="/acer.png" className="rounded mx-auto d-block w-50 h-70" alt="..." />
+          <img src="/acer.png" className="rounded mx-auto d-block w-40 h-60" alt="..." />
           </div>
         </div>
 
@@ -141,7 +141,7 @@ class Laptops extends Component{
               <h5 className="card-title heading"> <b> Gaming Consoles</b> </h5> 
               <p className="card-text text-center"> "Winner winner chicken dinner!! True gamers always require  relevant choices."</p>
               <div className="wrapper-btn">
-                <button type="button" className="btn btn-lg btn-outline-secondary mainbtn">Find!</button>
+              <a className="phn" href="/gamingconsoles"><button type="button" className="btn btn-lg btn-outline-secondary mainbtn">Find!</button></a>
               </div></div> 
     </div>
     <div className="col-sm-12 col-md-4">
@@ -157,7 +157,7 @@ class Laptops extends Component{
               <h5 className="card-title heading"> <b>Accessories</b> </h5> 
               <p className="card-text text-center">"Finding the thing which is right for u buddy!</p>
               <div className="wrapper-btn">
-                <button type="button" className="btn btn-lg btn-outline-secondary mainbtn">Find!</button>
+              <a className="phn" href="/accessories"><button type="button" className="btn btn-lg btn-outline-secondary mainbtn">Find!</button></a>
               </div></div>
     </div>
     
