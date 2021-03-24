@@ -108,7 +108,7 @@ class Phones extends Component{
 <br></br>
   <div className="row">
 
-<div className="col-sm-12 col-md-4">
+<div className="col-sm-12 col-md-4 shadow p-3 mb-5 bg-white rounded">
 <div className="card-body">
           <h5 className="card-title heading"> <b>Phones</b> </h5> 
           <p className="card-text text-center"> "Find the best phone which meets your required needs with our approved  guidance"</p>
@@ -116,7 +116,7 @@ class Phones extends Component{
           <a className="phn" href="/phones"><button type="button" className="btn btn-lg btn-outline-secondary mainbtn">Find!</button></a>
           </div></div> 
 </div>
-<div className="col-sm-12 col-md-4">
+<div className="col-sm-12 col-md-4 shadow p-3 mb-5 bg-white rounded">
 <div className="card-body">
           <h5 className="card-title heading"> <b>Laptops</b> </h5> 
           <p className="card-text text-center"> "Find a genuine laptop for youself"</p> 
@@ -124,7 +124,7 @@ class Phones extends Component{
           <a className="phn" href="/laptops"><button type="button" className="btn btn-lg btn-outline-secondary mainbtn">Find!</button></a>
           </div> </div>
 </div>
-<div className="col-sm-12 col-md-4">
+<div className="col-sm-12 col-md-4 shadow p-3 mb-5 bg-white rounded">
 <div className="card-body">
           <h5 className="card-title heading"> <b>Accessories</b> </h5> 
           <p className="card-text text-center">"Finding the thing which is right for u buddy!</p>

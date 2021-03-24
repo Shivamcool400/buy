@@ -121,7 +121,7 @@ class Accessories extends Component{
 <br></br>
   <div className="row">
 
-<div className="col-sm-12 col-md-4">
+<div className="col-sm-12 col-md-4 shadow p-3 mb-5 bg-white rounded">
 <div className="card-body">
           <h5 className="card-title heading"> <b> Gaming Consoles</b> </h5> 
           <p className="card-text text-center"> "Winner winner chicken dinner!! True gamers always require  relevant choices."</p>
@@ -129,7 +129,7 @@ class Accessories extends Component{
           <a className="phn" href="/gamingconsoles"><button type="button" className="btn btn-lg btn-outline-secondary mainbtn">Find!</button></a>
           </div></div> 
 </div>
-<div className="col-sm-12 col-md-4">
+<div className="col-sm-12 col-md-4 shadow p-3 mb-5 bg-white rounded">
 <div className="card-body">
           <h5 className="card-title heading"> <b>Laptops</b> </h5> 
           <p className="card-text text-center"> "Find a genuine laptop for youself"</p> 
@@ -137,7 +137,7 @@ class Accessories extends Component{
           <a className="phn" href="/laptops"><button type="button" className="btn btn-lg btn-outline-secondary mainbtn">Find!</button></a>
           </div> </div>
 </div>
-<div className="col-sm-12 col-md-4">
+<div className="col-sm-12 col-md-4 shadow p-3 mb-5 bg-white rounded">
 <div className="card-body">
           <h5 className="card-title heading"> <b>Phones</b> </h5> 
           <p className="card-text text-center">"Find the best phone which meets your required needs with our approved  guidance"</p>
