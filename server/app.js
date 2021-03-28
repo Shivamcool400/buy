@@ -11,7 +11,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 
 
 
-mongoose.connect("mongodb+srv://new_user31:shashi1967@buyexperts.wdiuq.mongodb.net/clientsData?retryWrites=true&w=majority", {useNewUrlParser:true, useUnifiedTopology: true, useCreateIndex: true, useFindAndModify: true})
+mongoose.connect("mongodb+srv://webexpert:webexpert@cluster0.npqgi.mongodb.net/myFirstDatabase?retryWrites=true&w=majority", {useNewUrlParser:true, useUnifiedTopology: true, useCreateIndex: true, useFindAndModify: true})
 .then(() => console.log('Database connected'))
 .catch((err) => console.log(err));
 
