@@ -1,9 +1,81 @@
-import React, {Component} from 'react';
+import React, { useState, useEffect} from 'react';
 import './login.css';
+import Fire from '../../firebase';
 
-class Login extends Component{
-    render() {
-        return(
+const Login = () => { 
+
+const [user, setUser] = useState('');
+const [email, setEmail] = useState('');
+const [password, setPassword] = useState('');
+const [emailError, setEmailError] = useState('');
+const [passwordError, setPasswordError] = useState('');
+const [hasAccount, setHasAccount] = useState(false);
+
+
+const clearInputs = () => {
+  setEmail('');
+  setPassword('');
+}
+
+const clearErrors = () => {
+  setEmailError('');
+  setPasswordError('');
+}
+
+
+const handleLogin = () => {
+  clearErrors();
+  Fire.auth().signInWithEmailAndPassword(email, password)
+  .catch((err) => {
+    switch (err.code) {
+      case "auth/invalid-email":
+        case "auth/user-disabled":
+          case "auth/user-not-found":
+            setEmailError(err.message);
+            break;
+            case "auth/wrong-password":
+              setPasswordError(err.message);
+              break;
+    }
+  });
+};
+
+const handleSignup = () => {
+  clearErrors();
+  Fire.auth().createUserWithEmailAndPassword(email, password)
+  .catch((err) => {
+    switch (err.code) {
+      case "auth/email-already-in-use":
+        case "auth/invalid-email":
+          setEmailError(err.message);
+            break;
+            case "auth/weak-password":
+              setPasswordError(err.message);
+              break;
+    }
+  });
+};
+
+const handleLogout = () => {
+  Fire.auth().signOut();
+};
+
+const authListener = () => {
+Fire.auth().onAuthStateChanged((user) => {
+  if (user) {
+    clearInputs();
+    setUser(user);
+  } else {
+    setUser("");
+  }
+});
+};
+
+useEffect(() => {
+  authListener();
+}, []);
+
+    return (
         <div className="container">
   <div className="row">
     <div className="col" />
@@ -12,32 +84,49 @@ class Login extends Component{
         <div className="card-body">
           <img src="/logo.jpeg" className="img-fluid" />
           <div className="form-floating mb-3">
-            <input type="email" className="form-control" id="floatingInput" placeholder="name@example.com" />
+            <input type="email" autoFocus required value={email} onChange={(e) => setEmail(e.target.value)} className="form-control" id="floatingInput" placeholder="name@example.com" />
             <label htmlFor="floatingInput">Email address</label>
+            <p className="errorMsg">{emailError}</p>
           </div>
           <div className="form-floating">
-            <input type="password" className="form-control" id="floatingPassword" placeholder="Password" />
+            <input type="password" required value={password} onChange={(e) => setPassword(e.target.value)} className="form-control" id="floatingPassword" placeholder="Password" />
             <label htmlFor="floatingPassword">Password</label>
+            <p className="errorMSg">{passwordError}</p> 
           </div>
-          <button type="button" className="btn sign-in-btn btn-lg">Sign in</button>
+          <div>
+            { hasAccount ? (
+              <>
+            <button type="button" onClick={handleLogin} className="btn sign-in-btn btn-lg">Sign in</button>
           <div className="form-check">
             <input className="form-check-input" type="checkbox" defaultValue id="flexCheckDefault" />
             <label className="form-check-label" htmlFor="flexCheckDefault">
               Remember Me <div><a href="#"> Need help?</a></div>
             </label>
           </div>
-          <a className="new-account" href="#"> Create new account</a>
+          <a className="new-account" onClick={() => setHasAccount(!hasAccount)} href="#"> Create new account</a>  
+              </>
+            ) : (
+            <>
+            <button type="button" onClick={handleSignup} className="btn sign-in-btn btn-lg">Sign Up</button>
+          
+            <a className="new-account" onClick={() => setHasAccount(!hasAccount)} href="#"> Already have an account </a>
+             </>
+
+            )
+
+
+            }
+          </div>
+          
+          
         </div>
       </div>
     </div>           
     <div className="col" />
   </div>
 </div>
-
-        
-        
-        
-        ); } }
+     ); 
+      };
         
 
 
