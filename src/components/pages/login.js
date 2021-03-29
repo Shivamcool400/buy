@@ -1,9 +1,11 @@
 import React, { useState, useEffect} from 'react';
 import './login.css';
+import { Link, useHistory } from 'react-router-dom';
 import Fire from '../../firebase';
 
 const Login = () => { 
 
+  const history = useHistory() ;
 const [user, setUser] = useState('');
 const [email, setEmail] = useState('');
 const [password, setPassword] = useState('');
@@ -26,6 +28,11 @@ const clearErrors = () => {
 const handleLogin = () => {
   clearErrors();
   Fire.auth().signInWithEmailAndPassword(email, password)
+  .then((auth) => {
+    if (auth) {
+      history.push('/home')
+    }
+  })
   .catch((err) => {
     switch (err.code) {
       case "auth/invalid-email":
@@ -65,6 +72,7 @@ Fire.auth().onAuthStateChanged((user) => {
   if (user) {
     clearInputs();
     setUser(user);
+    
   } else {
     setUser("");
   }
@@ -131,3 +139,4 @@ useEffect(() => {
 
 
 export default Login ;
+

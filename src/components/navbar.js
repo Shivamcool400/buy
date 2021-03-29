@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
 import './navbar.css';
+import Login from './pages/login'; 
+ 
 
 
 class Navbar extends Component{
@@ -27,8 +29,8 @@ class Navbar extends Component{
           <a className="nav-link pt-3" href="/contactus">Contact us!</a>
         </li>
         <li className="nav-item abc">
-          <a className="nav-link pt-3" href="/login">Login</a>
-        </li>
+        <a className="nav-link pt-3" href="/login">Login</a>
+          </li>
       </ul>
     </div>
   </div>
