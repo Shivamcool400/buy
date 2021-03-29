@@ -1,3 +1,4 @@
+import React, { useEffect } from 'react';
 import './App.css';
 import Navbar from './components/navbar';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
@@ -10,6 +11,8 @@ import Phones from './components/pages/phone';
 import Laptops from './components/pages/laptop';
 import GamingConsoles from './components/pages/gamingconsole';
 import Accessories from './components/pages/accessories';
+import Fire from './firebase';
+import { useStateValue } from "./stateprovider";
 
 function App() {
   return (

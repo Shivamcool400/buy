@@ -31,6 +31,7 @@ const handleLogin = () => {
   .then((auth) => {
     if (auth) {
       history.push('/home')
+      window.scrollTo(0,0);
     }
   })
   .catch((err) => {
