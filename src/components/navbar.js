@@ -1,11 +1,20 @@
 import React, {Component} from 'react';
 import './navbar.css';
 import Login from './pages/login'; 
+import { Link } from 'react-router-dom';
+import { useStateValue } from '../stateprovider';
+import Fire from '../firebase';
+
  
 
 
-class Navbar extends Component{
-    render() {
+function Navbar() {
+  const [{user}, dispatch] = useStateValue();
+
+  const handleLogout = () => {
+  Fire.auth().signOut();
+};
+    
         return (
 
            <nav className="navbar navbar-expand-lg scrolling-navbar">
@@ -29,8 +38,10 @@ class Navbar extends Component{
           <a className="nav-link pt-3" href="/contactus">Contact us!</a>
         </li>
         <li className="nav-item abc">
-        <a className="nav-link pt-3" href="/login">Login</a>
-          </li>
+          <Link to={!user && '/login'}>
+          <a className="nav-link pt-3" onClick={handleLogout} href="#">{user ? 'LogOut' : 'Login'}</a>
+          </Link>
+        </li>
       </ul>
     </div>
   </div>
@@ -38,7 +49,7 @@ class Navbar extends Component{
         
         
         );
-    }
+    
 }
 
 export default Navbar;

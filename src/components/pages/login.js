@@ -2,8 +2,11 @@ import React, { useState, useEffect} from 'react';
 import './login.css';
 import { Link, useHistory } from 'react-router-dom';
 import Fire from '../../firebase';
+import { useStateValue } from '../../stateprovider';
+
 
 const Login = () => { 
+  const [{}, dispatch] = useStateValue();
 
   const history = useHistory() ;
 const [user, setUser] = useState('');
@@ -64,18 +67,24 @@ const handleSignup = () => {
   });
 };
 
-const handleLogout = () => {
-  Fire.auth().signOut();
-};
+
 
 const authListener = () => {
 Fire.auth().onAuthStateChanged((user) => {
   if (user) {
     clearInputs();
     setUser(user);
+    dispatch({
+      type: "SET_USER",
+      user: user
+    })
     
   } else {
     setUser("");
+    dispatch({
+      type: "SET_USER",
+      user: null
+    })
   }
 });
 };
