@@ -6,7 +6,7 @@ import { useStateValue } from '../../stateprovider';
 
 
 const Login = () => { 
-  const [{}, dispatch] = useStateValue();
+ 
 
   const history = useHistory() ;
 const [user, setUser] = useState('');
@@ -54,6 +54,13 @@ const handleLogin = () => {
 const handleSignup = () => {
   clearErrors();
   Fire.auth().createUserWithEmailAndPassword(email, password)
+  .then((auth) => {
+    if (auth) {
+      history.push('/home')
+      window.scrollTo(0,0);
+      clearInputs();
+    }
+  })
   .catch((err) => {
     switch (err.code) {
       case "auth/email-already-in-use":
@@ -69,29 +76,7 @@ const handleSignup = () => {
 
 
 
-const authListener = () => {
-Fire.auth().onAuthStateChanged((user) => {
-  if (user) {
-    clearInputs();
-    setUser(user);
-    dispatch({
-      type: "SET_USER",
-      user: user
-    })
-    
-  } else {
-    setUser("");
-    dispatch({
-      type: "SET_USER",
-      user: null
-    })
-  }
-});
-};
 
-useEffect(() => {
-  authListener();
-}, []);
 
     return (
         <div className="container">

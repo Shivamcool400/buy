@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import './App.css';
 import Navbar from './components/navbar';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
@@ -15,6 +15,27 @@ import Fire from './firebase';
 import { useStateValue } from "./stateprovider";
 
 function App() {
+  const [{}, dispatch] = useStateValue();
+  const authListener = () => {
+    Fire.auth().onAuthStateChanged((user) => {
+      if (user) {
+        dispatch({
+          type: "SET_USER",
+          user: user
+        })
+        
+      } else {
+         dispatch({
+          type: "SET_USER",
+          user: null
+        })
+      }
+    });
+    };
+    
+    useEffect(() => {
+      authListener();
+    }, []);
   return (
     <div className="App">
       <div className="background">

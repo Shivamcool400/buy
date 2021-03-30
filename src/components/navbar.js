@@ -38,10 +38,15 @@ function Navbar() {
           <a className="nav-link pt-3" href="/contactus">Contact us!</a>
         </li>
         <li className="nav-item abc">
+          
           <Link to={!user && '/login'}>
           <a className="nav-link pt-3" onClick={handleLogout} href="#">{user ? 'LogOut' : 'Login'}</a>
           </Link>
         </li>
+        <li className="nav-item abc">
+        <span className="nav-link pt-3">Hello {!user ? 'Guest' : user.email}</span>
+        </li>
+        
       </ul>
     </div>
   </div>
