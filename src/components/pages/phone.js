@@ -1,8 +1,110 @@
-import React, {Component} from 'react';
+import React, {useState, Component} from 'react';
 import './phone.css';
 
-class Phones extends Component{
-    render() {
+function Phones () {
+  const [brand, setBrand] = useState([
+    {
+      name: "oneplus",
+    },
+    {
+      name: "samsung",
+    },
+    {
+      name: "Apple"
+    },
+    {
+      name: "realme"
+    },
+  ]);
+  const [selected, setSelected] = useState('');
+
+  var oneplus = [
+    {
+      price: "above 20000",
+      genere: "gaming",
+      ramstorage: "6gb above 64gb storage"
+    },
+    {
+      price: "above 30000",
+      genere: "normal",
+      ramstorage: "6gb above 128gb storage"
+    },
+    {
+      price: "above 40000",
+      genere: "speedy",
+      ramstorage: "8gb above128gb storage"
+    }
+  ];
+  var samsung = [
+    {
+      price: "above 10000",
+      genere: "gaming",
+      ramstorage: "6gb above 64gb storage/memorycard"
+    },
+    {
+      price: "above 20000",
+      genere: "normal",
+      ramstorage: "6gb above 128gb storage"
+    },
+    {
+      price: "above 30000",
+      genere: "speedy",
+      ramstorage: "8gb above 128gb storage"
+    },
+    {
+      price: "above 40000",
+      genere: "both",
+      ramstorage: "8gb above 128gb storage"
+    }
+
+  ];
+  var apple = [
+    {
+      price: "above 30000",
+      genere: "gaming",
+      ramstorage: "above 64gb storage"
+    },
+    {
+      price: "above 40000",
+      genere: "normal",
+      ramstorage: " above 128gb storage"
+    },
+    {
+      price: "above 50000",
+      genere: "speedy",
+      ramstorage: " above 256gb storage"
+    }
+  ];
+  var realme = [
+    {
+    price: "above 10000",
+    genere: "gaming",
+    ramstorage: "6gb above 64gb storage/memorycard"
+  },
+  {
+    price: "above 20000",
+    genere: "normal",
+    ramstorage: "6gb above 128gb storage"
+  },
+  {
+    price: "above 30000",
+    genere: "speedy",
+    ramstorage: "8gb above 128gb storage"
+  }
+];
+  
+   
+  var currentarray=[];
+  if(selected === "oneplus"){
+    currentarray= oneplus;
+   } else if (selected === "samsung"){
+     currentarray= samsung;
+   } else if (selected === "Apple") {
+     currentarray = apple;
+   } else if (selected === "realme"){
+     currentarray = realme;
+   }
+   
         return(
             <div>
         <div className="container" className="back">
@@ -16,21 +118,23 @@ class Phones extends Component{
     <div className="row">
            <div className="col-sm-12 col-md-3"><div className="input-group mb-3">
   <label className="input-group-text" htmlFor="inputGroupSelect01">Brand</label>
-  <select className="form-select" id="inputGroupSelect01">
+  <select onChange={(e) => setSelected(e.target.value)} className="form-select" id="inputGroupSelect01">
     <option selected>Choose...</option>
-    <option value={1}>One-plus</option>
-    <option value={2}>Samsung</option>
-    <option value={3}>Apple</option>
-  </select>
+          {brand.map((brand) => (
+            <option value={brand.name}>{brand.name}</option>
+          ))}
+   </select>
 </div>
 </div>
+
+
            <div className="col-sm-12 col-md-3"><div className="input-group mb-3">
   <label className="input-group-text" htmlFor="inputGroupSelect01">Price-range</label>
   <select className="form-select" id="inputGroupSelect01">
     <option selected>Choose...</option>
-    <option value={1}>below-10000</option>
-    <option value={2}>below-20000</option>
-    <option value={3}>above-30000</option>
+    {currentarray.map((price) => (
+            <option value={price.price}>{price.price}</option>
+          ))}
   </select>
 </div>
 </div>
@@ -38,9 +142,9 @@ class Phones extends Component{
   <label className="input-group-text" htmlFor="inputGroupSelect01">Genere</label>
   <select className="form-select" id="inputGroupSelect01">
     <option selected>Choose...</option>
-    <option value={1}>Normal</option>
-    <option value={2}>Gaming</option>
-    <option value={3}>Speedy</option>
+    {currentarray.map((genere) => (
+            <option value={genere.genere}>{genere.genere}</option>
+          ))}
   </select>
 </div>
 </div>
@@ -48,9 +152,9 @@ class Phones extends Component{
   <label className="input-group-text" htmlFor="inputGroupSelect01">Ram/Storage</label>
   <select className="form-select" id="inputGroupSelect01">
     <option selected>Choose...</option>
-    <option value={1}>4gb above 64gb storage</option>
-    <option value={2}>6gb above 64gb storage</option>
-    <option value={3}>8gb above 64gb storage</option>
+    {currentarray.map((ramstorage) => (
+            <option value={ramstorage.ramstorage}>{ramstorage.ramstorage}</option>
+          ))}
   </select>
 </div>
 </div>
@@ -165,7 +269,7 @@ class Phones extends Component{
        
         
         
-        ); } }
+        );  }
         
 
 
