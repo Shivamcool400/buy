@@ -46,6 +46,18 @@ function Navbar() {
         <li className="nav-item abc">
         <span className="nav-link pt-3">Hello {!user ? 'Guest' : user.email}</span>
         </li>
+        <li className="nav-item abc">
+          <a className="nav-link pt-3 mx-5" href="/phones">Phones!</a>
+        </li>
+        <li className="nav-item abc">
+          <a className="nav-link pt-3 mx-5" href="/laptops">Laptops!</a>
+        </li>
+        <li className="nav-item abc">
+          <a className="nav-link pt-3 mx-5" href="/gamingconsoles">Gaming consoles!</a>
+        </li>
+        <li className="nav-item abc">
+          <a className="nav-link pt-3 mx-5" href="/accessories">Accessories!</a>
+        </li>
         
       </ul>
     </div>
