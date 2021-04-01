@@ -10,16 +10,16 @@ function Phones () {
    db.collection('brand').onSnapshot(snapshot => (
      setBrand(snapshot.docs.map(doc => doc.data()))
    ))
-   db.collection('oneplus').onSnapshot(snapshot => (
+   db.collection('oneplus').orderBy("price").onSnapshot(snapshot => (
     setOneplus(snapshot.docs.map(doc => doc.data()))
   ))
-  db.collection('samsung').onSnapshot(snapshot => (
+  db.collection('samsung').orderBy("price").onSnapshot(snapshot => (
     setSamsung(snapshot.docs.map(doc => doc.data()))
   ))
-  db.collection('apple').onSnapshot(snapshot => (
+  db.collection('apple').orderBy("price").onSnapshot(snapshot => (
     setApple(snapshot.docs.map(doc => doc.data()))
   ))
-  db.collection('realme').onSnapshot(snapshot => (
+  db.collection('realme').orderBy("price").onSnapshot(snapshot => (
     setRealme(snapshot.docs.map(doc => doc.data()))
   ))
   }, []);
