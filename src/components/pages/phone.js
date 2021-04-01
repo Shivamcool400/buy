@@ -1,97 +1,34 @@
-import React, {useState, Component} from 'react';
+import React, {useState, useEffect} from 'react';
 import './phone.css';
+import Fire from '../../firebase';
+
 
 function Phones () {
-  const [brand, setBrand] = useState([
-    {
-      name: "oneplus",
-    },
-    {
-      name: "samsung",
-    },
-    {
-      name: "Apple"
-    },
-    {
-      name: "realme"
-    },
-  ]);
+  const db = Fire.firestore();
+  const [brand, setBrand] = useState([]);
+  useEffect(() => {
+   db.collection('brand').onSnapshot(snapshot => (
+     setBrand(snapshot.docs.map(doc => doc.data()))
+   ))
+   db.collection('oneplus').onSnapshot(snapshot => (
+    setOneplus(snapshot.docs.map(doc => doc.data()))
+  ))
+  db.collection('samsung').onSnapshot(snapshot => (
+    setSamsung(snapshot.docs.map(doc => doc.data()))
+  ))
+  db.collection('apple').onSnapshot(snapshot => (
+    setApple(snapshot.docs.map(doc => doc.data()))
+  ))
+  db.collection('realme').onSnapshot(snapshot => (
+    setRealme(snapshot.docs.map(doc => doc.data()))
+  ))
+  }, []);
   const [selected, setSelected] = useState('');
 
-  var oneplus = [
-    {
-      price: "above 20000",
-      genere: "gaming",
-      ramstorage: "6gb above 64gb storage"
-    },
-    {
-      price: "above 30000",
-      genere: "normal",
-      ramstorage: "6gb above 128gb storage"
-    },
-    {
-      price: "above 40000",
-      genere: "speedy",
-      ramstorage: "8gb above128gb storage"
-    }
-  ];
-  var samsung = [
-    {
-      price: "above 10000",
-      genere: "gaming",
-      ramstorage: "6gb above 64gb storage/memorycard"
-    },
-    {
-      price: "above 20000",
-      genere: "normal",
-      ramstorage: "6gb above 128gb storage"
-    },
-    {
-      price: "above 30000",
-      genere: "speedy",
-      ramstorage: "8gb above 128gb storage"
-    },
-    {
-      price: "above 40000",
-      genere: "both",
-      ramstorage: "8gb above 128gb storage"
-    }
-
-  ];
-  var apple = [
-    {
-      price: "above 30000",
-      genere: "gaming",
-      ramstorage: "above 64gb storage"
-    },
-    {
-      price: "above 40000",
-      genere: "normal",
-      ramstorage: " above 128gb storage"
-    },
-    {
-      price: "above 50000",
-      genere: "speedy",
-      ramstorage: " above 256gb storage"
-    }
-  ];
-  var realme = [
-    {
-    price: "above 10000",
-    genere: "gaming",
-    ramstorage: "6gb above 64gb storage/memorycard"
-  },
-  {
-    price: "above 20000",
-    genere: "normal",
-    ramstorage: "6gb above 128gb storage"
-  },
-  {
-    price: "above 30000",
-    genere: "speedy",
-    ramstorage: "8gb above 128gb storage"
-  }
-];
+  const [oneplus,setOneplus] = useState([]);
+  const [samsung,setSamsung] = useState([]);
+  const [apple,setApple] = useState([]);
+  var [realme,setRealme] = useState([]);
   
    
   var currentarray=[];
@@ -104,6 +41,7 @@ function Phones () {
    } else if (selected === "realme"){
      currentarray = realme;
    }
+  
    
         return(
             <div>
@@ -121,7 +59,7 @@ function Phones () {
   <select onChange={(e) => setSelected(e.target.value)} className="form-select" id="inputGroupSelect01">
     <option selected>Choose...</option>
           {brand.map((brand) => (
-            <option value={brand.name}>{brand.name}</option>
+            <option value={brand.name} key={brand.name}>{brand.name}</option>
           ))}
    </select>
 </div>
