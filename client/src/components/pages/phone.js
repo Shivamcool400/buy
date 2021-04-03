@@ -30,6 +30,16 @@ function Phones () {
   const [apple,setApple] = useState([]);
   var [realme,setRealme] = useState([]);
   
+
+const rate = (rating) => {Array(rating).fill().map((_, i) => (
+    <p><>
+    ⭐
+  </>
+  </p>
+  ))};
+
+   
+  
    
   var currentarray=[];
   if(selected === "oneplus"){
@@ -44,6 +54,7 @@ function Phones () {
   
    
         return(
+          /// find one!///
             <div>
         <div className="container" className="back">
             <figure className="text-center ">
@@ -104,6 +115,351 @@ function Phones () {
           <br></br>
 </div>
 
+{/* middle part after clicking find */}
+
+<figure className="text-center ">
+      <blockquote className="blockquote ">
+        <h2 className="msg-heading text-dark">Our First Choice  #1</h2>
+      </blockquote>
+    </figure>
+    
+    
+
+    <figure className="text-center ">
+      <blockquote className="blockquote ">
+        <h2 className="msg-heading-1 text-dark">OnePlus-Nord</h2>
+      </blockquote>
+    </figure>
+<br></br>
+    <div className="row">
+      <div className="col-sm-12 col-md-6"><img src="https://static.digit.in/default/da502c9b7c4eb1168eb3b8db6861c1e33501f6d3.jpeg?tr=n-product_detail_leader_thumb" className="rounded img-fluid " alt="..." /></div>
+      <div className="col-sm-12 col-md-6"><figure className="text-center ">
+      <blockquote className="blockquote ">
+        <h2 className="title text-dark">Specifications</h2>
+      </blockquote>
+    </figure>
+    <div className="table-responsive-sm">
+    <table className="table table-bordered border-dark">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">specs</th>
+      <th scope="col">quality</th>
+      <th scope="col">recommendation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Camera</td>
+      <td>2.5 Mp</td>
+      <td><>
+  ✖
+</>
+</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Storage</td>
+      <td>128gb</td>
+      <td><>
+  ✔
+</>
+</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Ram</td>
+      <td>6gb</td>
+      <td><>
+  ✔
+</></td>
+    </tr>
+  </tbody>
+</table>
+    </div>
+   
+    </div>
+    </div>
+
+    <div className="container" className="back-2 bg-secondary bg-gradient">
+      <figure className="text-center ">
+      <blockquote className="blockquote ">
+        <h2 className="msg-heading text-light">Why we recommend this?</h2>
+      </blockquote>
+    </figure>
+
+    <figure className="text-center ">
+      <blockquote className="blockquote ">
+        <h2 className="msg-heading-1 text-light">Experts views over this</h2>
+      </blockquote>
+    </figure>
+    <br></br>
+    <div className="container">
+      <div className="table-responsive-sm">
+      <table className="table table-dark table-bordered border-secondary">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Youtuber</th>
+      <th scope="col">Views</th>
+      <th scope="col">Likes</th>
+      <th scope="col">brief</th>
+      <th scope="col">recommendation</th>
+      
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Mark</td>
+      <td>30.1 lakhs</td>
+      <td>2k likes</td>
+      <td>restarts takes time</td>
+      <td><>
+  ✔
+</>
+</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>20.1 lakhs</td>
+      <td>1.5k likes</td>
+      <td>screen not hard</td>
+      <td><>
+  ✔
+</>
+</td>
+
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>facoy</td>
+      <td>50k </td>
+      <td>0.5k likes</td>
+      <td>all good</td>
+      <td><>
+  ✖
+</>
+</td>
+
+      
+    </tr>
+  </tbody>
+</table>
+      </div>
+    </div>
+<br></br>
+<br></br>
+
+<figure className="text-center ">
+      <blockquote className="blockquote ">
+        <h2 className="msg-heading-1 text-light">Famous blogs on this</h2>
+      </blockquote>
+    </figure>
+    <br></br>
+
+<div className="container">
+      <div className="table-responsive-sm">
+      <table className="table table-dark  table-bordered border-secondary">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">blogger</th>
+     <th scope="col">Likes</th>
+     <th scope="col">recommendation</th>
+      
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Mark</td>
+     <td>2k likes</td>
+      <td><>
+  ✔
+</>
+</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>1.5k likes</td>
+     <td><>
+  ✔
+</>
+</td>
+
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>facoy</td>
+     <td>0.5k likes</td>
+      <td><>
+  ✖
+</>
+</td>
+
+      
+    </tr>
+  </tbody>
+</table>
+      </div>
+    </div>
+    <br></br>
+    <br></br>
+
+    <figure className="text-center ">
+      <blockquote className="blockquote ">
+        <h2 className="msg-heading-1 text-light">Websites ratings</h2>
+      </blockquote>
+    </figure>
+    <br></br>
+
+    <div className="container">
+      <div className="table-responsive-sm">
+      <table className="table table-dark  table-bordered border-secondary">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Sellers</th>
+     <th scope="col">Ratings</th>
+     <th scope="col">recommendation</th>
+      
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Mark</td>
+     <td></td>
+      <td><>
+  ✔
+</>
+</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>1.5k likes</td>
+     <td><>
+  ✔
+</>
+</td>
+
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>facoy</td>
+     <td>0.5k likes</td>
+      <td><>
+  ✖
+</>
+</td>
+
+      
+    </tr>
+  </tbody>
+</table>
+      </div>
+    </div>
+    <br></br>
+    <br></br>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{/* ending part  */}
 <figure className="text-center ">
       <blockquote className="blockquote ">
         <h2 className="msg-heading text-dark"># Brands We Operate</h2>
