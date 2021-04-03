@@ -72,6 +72,10 @@
        text-align: center;
         }
 
+        .rating {
+            display:flex;
+        }
+
        
 
             .msg-3 {

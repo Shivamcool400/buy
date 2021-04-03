@@ -1,6 +1,7 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState, useEffect, Component} from 'react';
 import './phone.css';
 import Fire from '../../firebase';
+import product from './phonecomponents/product';
 
 
 function Phones () {
@@ -29,14 +30,20 @@ function Phones () {
   const [samsung,setSamsung] = useState([]);
   const [apple,setApple] = useState([]);
   var [realme,setRealme] = useState([]);
+  const rate = (rating) => {
+    return(
+      <div className="rating">
+        {Array(rating).fill().map((_, i) => (
+      <p><>
+      ⭐
+    </>
+    </p>
+    ))}
+      </div>
+      )
+  };
   
 
-const rate = (rating) => {Array(rating).fill().map((_, i) => (
-    <p><>
-    ⭐
-  </>
-  </p>
-  ))};
 
    
   
@@ -133,7 +140,7 @@ const rate = (rating) => {Array(rating).fill().map((_, i) => (
 <br></br>
     <div className="row">
       <div className="col-sm-12 col-md-6"><img src="https://static.digit.in/default/da502c9b7c4eb1168eb3b8db6861c1e33501f6d3.jpeg?tr=n-product_detail_leader_thumb" className="rounded img-fluid " alt="..." /></div>
-      <div className="col-sm-12 col-md-6"><figure className="text-center ">
+      <div className="col-sm-12 col-md-6"><br></br><figure className="text-center ">
       <blockquote className="blockquote ">
         <h2 className="title text-dark">Specifications</h2>
       </blockquote>
@@ -181,6 +188,8 @@ const rate = (rating) => {Array(rating).fill().map((_, i) => (
    
     </div>
     </div>
+    <br></br>
+    <br></br>
 
     <div className="container" className="back-2 bg-secondary bg-gradient">
       <figure className="text-center ">
@@ -312,10 +321,11 @@ const rate = (rating) => {Array(rating).fill().map((_, i) => (
 
     <figure className="text-center ">
       <blockquote className="blockquote ">
-        <h2 className="msg-heading-1 text-light">Websites ratings</h2>
+        <h2 className="msg-heading-1 text-light">Buyers ratings/reviews</h2>
       </blockquote>
     </figure>
     <br></br>
+    
 
     <div className="container">
       <div className="table-responsive-sm">
@@ -325,6 +335,7 @@ const rate = (rating) => {Array(rating).fill().map((_, i) => (
       <th scope="col">#</th>
       <th scope="col">Sellers</th>
      <th scope="col">Ratings</th>
+     <th scope="col">Brief</th>
      <th scope="col">recommendation</th>
       
     </tr>
@@ -332,8 +343,9 @@ const rate = (rating) => {Array(rating).fill().map((_, i) => (
   <tbody>
     <tr>
       <th scope="row">1</th>
-      <td>Mark</td>
-     <td></td>
+      <td>Amazon</td>
+     <td> {rate(4)}</td>
+     <td>All good</td>
       <td><>
   ✔
 </>
@@ -341,8 +353,9 @@ const rate = (rating) => {Array(rating).fill().map((_, i) => (
     </tr>
     <tr>
       <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>1.5k likes</td>
+      <td>Flipkart</td>
+      <td>{rate(3)}</td>
+      <td>Battery issues</td>
      <td><>
   ✔
 </>
@@ -351,8 +364,9 @@ const rate = (rating) => {Array(rating).fill().map((_, i) => (
     </tr>
     <tr>
       <th scope="row">3</th>
-      <td>facoy</td>
-     <td>0.5k likes</td>
+      <td>Ebay</td>
+     <td>{rate(2)}</td>
+     <td>Heating problems</td>
       <td><>
   ✖
 </>
@@ -366,74 +380,127 @@ const rate = (rating) => {Array(rating).fill().map((_, i) => (
     </div>
     <br></br>
     <br></br>
+</div>
+<br></br>
+<br></br>
+<div className="container" className="back-2 bg-success bg-gradient">
+      <figure className="text-center ">
+      <blockquote className="blockquote ">
+        <h2 className="msg-heading text-light"> Price Comparator</h2>
+      </blockquote>
+    </figure>
 
-
-
-
+    <div className="container">
+      <div className="table-responsive-sm">
+      <table className="table table-dark table-bordered border-secondary">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Website</th>
+      <th scope="col">Price</th>
+      <th scope="col">Links</th>
+      
+      
+    </tr>
+  </thead>
+  <tbody>
+    <tr className="table-active">
+      <th scope="row">1</th>
+      <td>Amazon</td>
+      <td>36000</td>
+      <td><a className="text-white" href="http://www.amazon.com">Buy</a> </td>
+      
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Flipkart</td>
+      <td>35500</td>
+      <td><a className="text-white" href="http://www.Flipkart.com">Buy</a> </td>
+      </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Ebay</td>
+      <td>37000 </td>
+      <td><td><a className="text-white" href="http:/www.ebay.com">Buy</a> </td></td>
+      </tr>
+  </tbody>
+</table>
+      </div>
+    </div>
+    <br></br>
+    <br></br>
+</div>
+<br></br>
+<br></br>
+<div className="container" className="back-2 bg-info bg-gradient">
+      <figure className="text-center ">
+      <blockquote className="blockquote ">
+        <h2 className="msg-heading text-light"> Tech Stuff </h2>
+      </blockquote>
+    </figure>
+    <div className="container">
+    <div className="accordion accordion-flush" id="accordionFlushExample">
+  <div className="accordion-item">
+    <h2 className="accordion-header" id="flush-headingOne">
+      <button className="accordion-button collapsed text-white bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+      <figure className="text-center ">
+      <blockquote className="blockquote ">
+        <h2 className="msg-heading-1 text-light">SnapDragon</h2>
+      </blockquote>
+    </figure>
+      </button>
+    </h2>
+    <div id="flush-collapseOne" className="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+      <div className="accordion-body"><figure className="text-center ">
+    <blockquote className="blockquote ">
+      <p className="h1 msg-3 text-white"><b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus eum laudantium eos, dolorem soluta facilis officiis culpa excepturi atque sunt consectetur recusandae eveniet doloremque corporis labore aliquam inventore in quis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim repudiandae iusto quis. Omnis voluptate quidem sint veniam, dolorem aliquam accusantium totam. Reprehenderit dolores facilis beatae tenetur, autem perspiciatis amet temporibus?</b></p>
+    </blockquote>
+  </figure></div>
+    </div>
+  </div>
+  <div className="accordion-item">
+    <h2 className="accordion-header" id="flush-headingTwo">
+      <button className="accordion-button collapsed text-white bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+      <figure className="text-center ">
+      <blockquote className="blockquote ">
+        <h2 className="msg-heading-1 text-light">Oxygen os</h2>
+      </blockquote>
+    </figure>
+      </button>
+    </h2>
+    <div id="flush-collapseTwo" className="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+      <div className="accordion-body"><figure className="text-center ">
+    <blockquote className="blockquote ">
+      <p className="h1 msg-3 text-white"><b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus eum laudantium eos, dolorem soluta facilis officiis culpa excepturi atque sunt consectetur recusandae eveniet doloremque corporis labore aliquam inventore in quis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim repudiandae iusto quis. Omnis voluptate quidem sint veniam, dolorem aliquam accusantium totam. Reprehenderit dolores facilis beatae tenetur, autem perspiciatis amet temporibus?</b></p>
+    </blockquote>
+  </figure></div>
+    </div>
+  </div>
+  <div className="accordion-item">
+    <h2 className="accordion-header" id="flush-headingThree">
+      <button className="accordion-button collapsed text-white bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+      <figure className="text-center ">
+      <blockquote className="blockquote ">
+        <h2 className="msg-heading-1 text-light">90 hz Fluid AMOLED 6.55" Display</h2>
+      </blockquote>
+    </figure>
+      </button>
+    </h2>
+    <div id="flush-collapseThree" className="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+      <div className="accordion-body"><figure className="text-center ">
+    <blockquote className="blockquote ">
+      <p className="h1 msg-3 text-white"><b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus eum laudantium eos, dolorem soluta facilis officiis culpa excepturi atque sunt consectetur recusandae eveniet doloremque corporis labore aliquam inventore in quis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim repudiandae iusto quis. Omnis voluptate quidem sint veniam, dolorem aliquam accusantium totam. Reprehenderit dolores facilis beatae tenetur, autem perspiciatis amet temporibus?</b></p>
+    </blockquote>
+  </figure></div>
+    </div>
+  </div>
 </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    </div>
+    <br></br>
+    <br></br>
+    <br></br>
+    </div>
 
 
 

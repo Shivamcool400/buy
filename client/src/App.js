@@ -14,6 +14,7 @@ import Accessories from './components/pages/accessories';
 import Fire from './firebase';
 import { useStateValue } from "./stateprovider";
 
+
 function App() {
   const [{}, dispatch] = useStateValue();
   const authListener = () => {
