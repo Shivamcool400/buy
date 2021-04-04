@@ -103,7 +103,7 @@ const handleSignup = () => {
           <div className="form-check">
             <input className="form-check-input" type="checkbox" defaultValue id="flexCheckDefault" />
             <label className="form-check-label" htmlFor="flexCheckDefault">
-              Remember Me <div><a href="#"> Need help?</a></div>
+              Remember Me <div><a href="/forgot"> Forgot Password</a></div>
             </label>
           </div>
           <a className="new-account" onClick={() => setHasAccount(!hasAccount)} href="#"> Create new account</a>  

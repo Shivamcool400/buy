@@ -13,6 +13,7 @@ import GamingConsoles from './components/pages/gamingconsole';
 import Accessories from './components/pages/accessories';
 import Fire from './firebase';
 import { useStateValue } from "./stateprovider";
+import Forgotpassword from './components/pages/forgotpassword';
 
 
 function App() {
@@ -52,6 +53,7 @@ function App() {
                   <Route path='/laptops' component={Laptops} />
                   <Route path='/gamingconsoles' component={GamingConsoles} />
                   <Route path='/accessories' component={Accessories} />
+                  <Route path='/forgot' component={Forgotpassword} />
                
               
               </Switch>
