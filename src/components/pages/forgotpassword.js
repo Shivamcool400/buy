@@ -39,7 +39,8 @@ function Forgotpassword() {
             <label htmlFor="floatingInput">Email address</label>
             <p className="errorMsg">{emailError}</p>
           </div>
-          <button type="button" onClick={handleLogin} className="btn sign-in-btn btn-lg">Submit</button>
+          <Link to={'/login'}><button type="button" onClick={handleLogin} className="btn sign-in-btn btn-lg">Submit</button></Link>
+          
         </div>
         </div>
       </div>
