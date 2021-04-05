@@ -23,6 +23,27 @@ function Phones () {
   db.collection('realme').orderBy("price").onSnapshot(snapshot => (
     setRealme(snapshot.docs.map(doc => doc.data()))
   ))
+  db.collection('head').orderBy("choice").onSnapshot(snapshot => (
+    setHead(snapshot.docs.map(doc => doc.data()))
+  ))
+  db.collection('specs').onSnapshot(snapshot => (
+    setSpecs(snapshot.docs.map(doc => doc.data()))
+  ))
+  db.collection('youtube').onSnapshot(snapshot => (
+    setYoutube(snapshot.docs.map(doc => doc.data()))
+  ))
+  db.collection('blog').onSnapshot(snapshot => (
+    setBlog(snapshot.docs.map(doc => doc.data()))
+  ))
+  db.collection('seller').orderBy("name").onSnapshot(snapshot => (
+    setSeller(snapshot.docs.map(doc => doc.data()))
+  ))
+  db.collection('gaming').onSnapshot(snapshot => (
+    setGaming(snapshot.docs.map(doc => doc.data()))
+  ))
+  db.collection('tech').orderBy("serial").onSnapshot(snapshot => (
+    setTech(snapshot.docs.map(doc => doc.data()))
+  ))
   }, []);
   const [selected, setSelected] = useState('');
 
@@ -34,7 +55,15 @@ function Phones () {
   const [price,setPrice] = useState('');
   const [genere,setGenere] = useState('');
   const [ram,setRam] = useState('');
+  const [head,setHead] = useState([]);
+  const [specs,setSpecs] = useState([]);
+
+  const [youtube,setYoutube] = useState([]);
+  const [blog,setBlog] = useState([]);
+  const [seller,setSeller] = useState([]);
   
+  const [gaming,setGaming] = useState([]);
+  const [tech,setTech] = useState([]);
 
   const content = () => {
     setShow(true);
@@ -122,10 +151,11 @@ function Phones () {
 </div>
 
 {/* middle part after clicking find */}
-{selected === "oneplus" && price === "above 30000" && genere === "gaming" && show && ram === "6gb above 128gb storage" && <div><Product choice="Our First Choice #1" device="OnePlus-Nord" url="https://static.digit.in/default/da502c9b7c4eb1168eb3b8db6861c1e33501f6d3.jpeg?tr=n-product_detail_leader_thumb" />
-<Product choice="Our Second Choice #2" device="OnePlus-8T" url="https://m.media-amazon.com/images/I/61Tw6LZoaiL._AC_UY327_FMwebp_QL65_.jpg" />
-<Product choice="Our Third Choice #3" device="OnePlus-8PRO" url="https://m.media-amazon.com/images/I/61YSMhOd5EL._AC_UY327_FMwebp_QL65_.jpg" />
-</div>}
+{selected === "oneplus" && price === "above 30000" && genere === "gaming" && show && ram === "6gb above 128gb storage" && <>{head.map((head) => (
+           <Product choice={head.choice} device={head.device} url={head.url} specs={specs} youtube={youtube} blog={blog} seller={seller} gaming={gaming} tech={tech}/>
+          ))}</>
+
+}
 
 
 

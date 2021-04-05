@@ -1,19 +1,16 @@
-import React, {Component} from 'react'
+import React, {Component, useState} from 'react'
 
-function Product({choice, device, url}) {
+function Product({choice, device, url,specs,youtube,blog,seller,gaming,tech}) {
 
-    const rate = (rating) => {
-        return(
-          <div className="rating">
-            {Array(rating).fill().map((_, i) => (
-          <p><>
-          ⭐
-        </>
-        </p>
-        ))}
-          </div>
-          )
-      };
+ 
+  
+  var num = 0;
+  var num1 = 0;
+  var num2=0;
+  var num3 = 0;
+  var num4 = 0;
+
+   
     return (
         
         <div>
@@ -52,32 +49,16 @@ function Product({choice, device, url}) {
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <th scope="row">1</th>
-      <td>Camera</td>
-      <td>2.5 Mp</td>
-      <td><>
-  ✖
-</>
-</td>
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Storage</td>
-      <td>128gb</td>
-      <td><>
-  ✔
-</>
-</td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td>Ram</td>
-      <td>6gb</td>
-      <td><>
-  ✔
-</></td>
-    </tr>
+  {specs.map((brand) => (
+            <tr>
+            <th scope="row">{num=num+1}</th>
+            <td>{brand.name}</td>
+            <td>{brand.quality}</td>
+            <td>{brand.recommendation}</td>
+          </tr>
+          ))}
+    
+   
   </tbody>
 </table>
     </div>
@@ -115,42 +96,18 @@ function Product({choice, device, url}) {
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <th scope="row">1</th>
-      <td>Mark</td>
-      <td>30.1 lakhs</td>
-      <td>2k likes</td>
-      <td>restarts takes time</td>
-      <td><>
-  ✔
-</>
-</td>
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>20.1 lakhs</td>
-      <td>1.5k likes</td>
-      <td>screen not hard</td>
-      <td><>
-  ✔
-</>
-</td>
-
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td>facoy</td>
-      <td>50k </td>
-      <td>0.5k likes</td>
-      <td>all good</td>
-      <td><>
-  ✖
-</>
-</td>
-
-      
-    </tr>
+  {youtube.map((youtube) => (
+             <tr>
+             <th scope="row">{num1=num1+1}</th>
+             <td>{youtube.name}</td>
+             <td>{youtube.views}</td>
+             <td>{youtube.likes}</td>
+             <td>{youtube.brief}</td>
+             <td>{youtube.recommendation}</td>
+           </tr>
+          ))}
+   
+   
   </tbody>
 </table>
       </div>
@@ -178,37 +135,15 @@ function Product({choice, device, url}) {
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <th scope="row">1</th>
-      <td>Mark</td>
-     <td>2k likes</td>
-      <td><>
-  ✔
-</>
-</td>
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>1.5k likes</td>
-     <td><>
-  ✔
-</>
-</td>
-
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td>facoy</td>
-     <td>0.5k likes</td>
-      <td><>
-  ✖
-</>
-</td>
-
-      
-    </tr>
-  </tbody>
+  {blog.map((blog) => (
+             <tr>
+             <th scope="row">{num2=num2+1}</th>
+             <td>{blog.name}</td>
+             <td>{blog.likes}</td>
+             <td>{blog.recommendation}</td>
+           </tr>
+          ))}
+</tbody>
 </table>
       </div>
     </div>
@@ -237,63 +172,43 @@ function Product({choice, device, url}) {
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <th scope="row">1</th>
-      <td>Amazon</td>
-     <td> {rate(4)}</td>
-     <td>All good</td>
-      <td><>
-  ✔
-</>
-</td>
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Flipkart</td>
-      <td>{rate(3)}</td>
-      <td>Battery issues</td>
-     <td><>
-  ✔
-</>
-</td>
-
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td>Ebay</td>
-     <td>{rate(2)}</td>
-     <td>Heating problems</td>
-      <td><>
-  ✖
-</>
-</td>
-
-      
-    </tr>
+  {seller.map((seller) => (
+             <tr>
+             <th scope="row">{num3=num3+1}</th>
+             <td>{seller.name}</td>
+             <td>{seller.ratings}</td>
+             <td>{seller.brief}</td>
+             <td>{seller.recommendation}</td>
+           </tr>
+          ))}
   </tbody>
 </table>
       </div>
     </div>
     <br></br>
     <br></br>
-    <figure className="text-center ">
-      <blockquote className="blockquote ">
-        <h2 className="msg-heading-1 text-light">What makes it a Gaming one!</h2>
-      </blockquote>
-    </figure>
-    <br></br>
+    {gaming.map((gaming) => (
+      <>
+             <figure className="text-center ">
+             <blockquote className="blockquote ">
+               <h2 className="msg-heading-1 text-light">{gaming.head}</h2>
+             </blockquote>
+           </figure>
+           <br></br>
+           
+           <div className="container">
+           <div className="card bg-dark bordered">
+         <div className="card-body text-white">
+         <figure className="text-center">
+           <blockquote className="blockquote ">
+             <p className="h1 msg-3 text-white"><b>{gaming.para}</b></p>
+           </blockquote>
+         </figure>
+         </div>
+       </div>
+           </div></>
+          ))}
     
-    <div className="container">
-    <div className="card bg-dark bordered">
-  <div className="card-body text-white">
-  <figure className="text-center">
-    <blockquote className="blockquote ">
-      <p className="h1 msg-3 text-white"><b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus eum laudantium eos, dolorem soluta facilis officiis culpa excepturi atque sunt consectetur recusandae eveniet doloremque corporis labore aliquam inventore in quis? Lore</b></p>
-    </blockquote>
-  </figure>
-  </div>
-</div>
-    </div>
    <br></br>
    <br></br>
 
@@ -321,26 +236,15 @@ function Product({choice, device, url}) {
     </tr>
   </thead>
   <tbody>
-    <tr className="table-active">
-      <th scope="row">1</th>
-      <td>Amazon</td>
-      <td>36000</td>
-      <td><a className="text-white" href="http://www.amazon.com">Buy</a> </td>
-      
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Flipkart</td>
-      <td>35500</td>
-      <td><a className="text-white" href="http://www.Flipkart.com">Buy</a> </td>
-      </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td>Ebay</td>
-      <td>37000 </td>
-      <td><td><a className="text-white" href="http:/www.ebay.com">Buy</a> </td></td>
-      </tr>
-  </tbody>
+  {seller.map((seller) => (
+             <tr className={seller.class}>
+             <th scope="row">{num4=num4+1}</th>
+             <td>{seller.name}</td>
+             <td>{seller.price}</td>
+             <td><a className="text-white" href={seller.link}>Buy</a></td>
+             </tr>
+          ))}
+    </tbody>
 </table>
       </div>
     </div>
@@ -357,7 +261,28 @@ function Product({choice, device, url}) {
     </figure>
     <div className="container">
     <div className="accordion accordion-flush" id="accordionFlushExample">
-  <div className="accordion-item">
+
+    {tech.map((tech) => (
+          <div className="accordion-item">
+          <h2 className="accordion-header" id={tech.id1}>
+            <button className="accordion-button collapsed text-white bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target={tech.id3} aria-expanded="false" aria-controls={tech.id2}>
+            <figure className="text-center ">
+            <blockquote className="blockquote ">
+              <h2 className="msg-heading-1 text-light">{tech.name}</h2>
+            </blockquote>
+          </figure>
+            </button>
+          </h2>
+          <div id={tech.id2} className="accordion-collapse collapse" aria-labelledby={tech.id1} data-bs-parent="#accordionFlushExample">
+            <div className="accordion-body"><figure className="text-center ">
+          <blockquote className="blockquote ">
+            <p className="h1 msg-3 text-white"><b>{tech.para}</b></p>
+          </blockquote>
+        </figure></div>
+          </div>
+        </div>  
+          ))}
+ {/*  <div className="accordion-item">
     <h2 className="accordion-header" id="flush-headingOne">
       <button className="accordion-button collapsed text-white bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
       <figure className="text-center ">
@@ -410,7 +335,7 @@ function Product({choice, device, url}) {
     </blockquote>
   </figure></div>
     </div>
-  </div>
+  </div> */}
 </div>
 
     </div>
