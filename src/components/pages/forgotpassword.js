@@ -7,6 +7,7 @@ function Forgotpassword() {
     const [emailError, setEmailError] = useState('');
   
     const handleLogin = () => {
+        
        
         Fire.auth().sendPasswordResetEmail(email)
         .then(() => {
