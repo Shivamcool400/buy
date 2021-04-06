@@ -23,25 +23,34 @@ function Phones () {
   db.collection('realme').orderBy("price").onSnapshot(snapshot => (
     setRealme(snapshot.docs.map(doc => doc.data()))
   ))
-  db.collection('head').orderBy("choice").onSnapshot(snapshot => (
+  db.collection('oppo').orderBy("price").onSnapshot(snapshot => (
+    setOppo(snapshot.docs.map(doc => doc.data()))
+  ))
+  db.collection('vivo').orderBy("price").onSnapshot(snapshot => (
+    setVivo(snapshot.docs.map(doc => doc.data()))
+  ))
+  db.collection('xiaomi').orderBy("price").onSnapshot(snapshot => (
+    setXiaomi(snapshot.docs.map(doc => doc.data()))
+  ))
+  db.collection('head_1_oneplus').orderBy("choice").onSnapshot(snapshot => (
     setHead(snapshot.docs.map(doc => doc.data()))
   ))
-  db.collection('specs').onSnapshot(snapshot => (
+  db.collection('specs_1_oneplus').onSnapshot(snapshot => (
     setSpecs(snapshot.docs.map(doc => doc.data()))
   ))
-  db.collection('youtube').onSnapshot(snapshot => (
+  db.collection('youtube_1_oneplus').onSnapshot(snapshot => (
     setYoutube(snapshot.docs.map(doc => doc.data()))
   ))
-  db.collection('blog').onSnapshot(snapshot => (
+  db.collection('blog_1_oneplus').onSnapshot(snapshot => (
     setBlog(snapshot.docs.map(doc => doc.data()))
   ))
-  db.collection('seller').orderBy("name").onSnapshot(snapshot => (
+  db.collection('seller_1_oneplus').orderBy("name").onSnapshot(snapshot => (
     setSeller(snapshot.docs.map(doc => doc.data()))
   ))
-  db.collection('gaming').onSnapshot(snapshot => (
+  db.collection('gaming_1_oneplus').onSnapshot(snapshot => (
     setGaming(snapshot.docs.map(doc => doc.data()))
   ))
-  db.collection('tech').orderBy("serial").onSnapshot(snapshot => (
+  db.collection('tech_1_oneplus').orderBy("serial").onSnapshot(snapshot => (
     setTech(snapshot.docs.map(doc => doc.data()))
   ))
   }, []);
@@ -51,6 +60,10 @@ function Phones () {
   const [samsung,setSamsung] = useState([]);
   const [apple,setApple] = useState([]);
   const [realme,setRealme] = useState([]);
+  const [vivo,setVivo] = useState([]);
+  const [oppo,setOppo] = useState([]);
+  const [xiaomi,setXiaomi] = useState([]);
+
 
   const [price,setPrice] = useState('');
   const [genere,setGenere] = useState('');
@@ -81,7 +94,13 @@ function Phones () {
      currentarray = apple;
    } else if (selected === "realme"){
      currentarray = realme;
-   }
+   } else if (selected === "vivo"){
+    currentarray = vivo;
+  } else if (selected === "oppo"){
+    currentarray = oppo;
+  } else if (selected === "xiaomi"){
+    currentarray = xiaomi;
+  }
   
    
    
