@@ -2,6 +2,15 @@ import React, {useState, useEffect, Component} from 'react';
 import './phone.css';
 import Fire from '../../firebase';
 import Product from './phonecomponents/product';
+import Oneplus_1 from './phonecomponents/oneplus/oneplus_1';
+import Oneplus_2 from './phonecomponents/oneplus/oneplus_2';
+import Oneplus_3 from './phonecomponents/oneplus/oneplus_3';
+import Oneplus_4 from './phonecomponents/oneplus/oneplus_4';
+import Oneplus_5 from './phonecomponents/oneplus/oneplus_5';
+import Oneplus_6 from './phonecomponents/oneplus/oneplus_6';
+import Oneplus_7 from './phonecomponents/oneplus/oneplus_7';
+import Oneplus_8 from './phonecomponents/oneplus/oneplus_8';
+import Oneplus_9 from './phonecomponents/oneplus/oneplus_9';
 
 
 function Phones () {
@@ -32,27 +41,7 @@ function Phones () {
   db.collection('xiaomi').orderBy("price").onSnapshot(snapshot => (
     setXiaomi(snapshot.docs.map(doc => doc.data()))
   ))
-  db.collection('head_1_oneplus').orderBy("choice").onSnapshot(snapshot => (
-    setHead(snapshot.docs.map(doc => doc.data()))
-  ))
-  db.collection('specs_1_oneplus').onSnapshot(snapshot => (
-    setSpecs(snapshot.docs.map(doc => doc.data()))
-  ))
-  db.collection('youtube_1_oneplus').onSnapshot(snapshot => (
-    setYoutube(snapshot.docs.map(doc => doc.data()))
-  ))
-  db.collection('blog_1_oneplus').onSnapshot(snapshot => (
-    setBlog(snapshot.docs.map(doc => doc.data()))
-  ))
-  db.collection('seller_1_oneplus').orderBy("name").onSnapshot(snapshot => (
-    setSeller(snapshot.docs.map(doc => doc.data()))
-  ))
-  db.collection('gaming_1_oneplus').onSnapshot(snapshot => (
-    setGaming(snapshot.docs.map(doc => doc.data()))
-  ))
-  db.collection('tech_1_oneplus').orderBy("serial").onSnapshot(snapshot => (
-    setTech(snapshot.docs.map(doc => doc.data()))
-  ))
+  
   }, []);
   const [selected, setSelected] = useState('');
 
@@ -68,16 +57,7 @@ function Phones () {
   const [price,setPrice] = useState('');
   const [genere,setGenere] = useState('');
   const [ram,setRam] = useState('');
-  const [head,setHead] = useState([]);
-  const [specs,setSpecs] = useState([]);
-
-  const [youtube,setYoutube] = useState([]);
-  const [blog,setBlog] = useState([]);
-  const [seller,setSeller] = useState([]);
-  
-  const [gaming,setGaming] = useState([]);
-  const [tech,setTech] = useState([]);
-
+ 
   const content = () => {
     setShow(true);
   }
@@ -170,14 +150,99 @@ function Phones () {
 </div>
 
 {/* middle part after clicking find */}
-{selected === "oneplus" && price === "above 30000" && genere === "gaming" && show && ram === "6gb above 128gb storage" && <>{head.map((head) => (
-           <Product choice={head.choice} device={head.device} url={head.url} specs={specs} youtube={youtube} blog={blog} seller={seller} gaming={gaming} tech={tech}/>
-          ))}</>
 
+
+{/* oneplus above 30000 */}
+{selected === "oneplus" && price === "above 30000" && genere === "gaming" && show && ram === "6gb above 128gb storage" && <> <Oneplus_1 />
+<Oneplus_2 /> <Oneplus_3/>  </>
+}
+{selected === "oneplus" && price === "above 30000" && genere === "normal" && show && ram === "6gb above 128gb storage" && <> <Oneplus_1 />
+<Oneplus_2 /> <Oneplus_3/>  </>
+}
+{selected === "oneplus" && price === "above 30000" && genere === "speedy" && show && ram === "6gb above 128gb storage" && <> <Oneplus_1 />
+<Oneplus_2 /> <Oneplus_3/>  </>
+}
+{selected === "oneplus" && price === "above 30000" && genere === "normal" && show && ram === "6gb above 64gb storage" && <> <Oneplus_1 />
+<Oneplus_2 /> <Oneplus_3/>  </>
+}
+{selected === "oneplus" && price === "above 30000" && genere === "speedy" && show && ram === "6gb above 64gb storage" && <> <Oneplus_1 />
+<Oneplus_2 /> <Oneplus_3/>  </>
+}
+{selected === "oneplus" && price === "above 30000" && genere === "gaming" && show && ram === "6gb above 64gb storage" && <> <Oneplus_1 />
+<Oneplus_2 /> <Oneplus_3/>  </>
+}
+{selected === "oneplus" && price === "above 30000" && genere === "speedy" && show && ram === "8gb above 128gb storage" && <> <Oneplus_1 />
+<Oneplus_2 /> <Oneplus_3/>  </>
+}
+{selected === "oneplus" && price === "above 30000" && genere === "gaming" && show && ram === "8gb above 128gb storage" && <> <Oneplus_1 />
+<Oneplus_2 /> <Oneplus_3/>  </>
+}
+{selected === "oneplus" && price === "above 30000" && genere === "normal" && show && ram === "8gb above 128gb storage" && <> <Oneplus_1 />
+<Oneplus_2 /> <Oneplus_3/>  </>
 }
 
 
 
+
+{/*oneplus above 40000  */}
+{selected === "oneplus" && price === "above 40000" && genere === "gaming" && show && ram === "6gb above 128gb storage" && <> <Oneplus_4 />
+<Oneplus_5 /> <Oneplus_6/>  </>
+}
+{selected === "oneplus" && price === "above 40000" && genere === "normal" && show && ram === "6gb above 128gb storage" && <> <Oneplus_4 />
+<Oneplus_5 /> <Oneplus_6/>  </>
+}
+{selected === "oneplus" && price === "above 40000" && genere === "speedy" && show && ram === "6gb above 128gb storage" && <> <Oneplus_4 />
+<Oneplus_5 /> <Oneplus_6/>  </>
+}
+{selected === "oneplus" && price === "above 40000" && genere === "normal" && show && ram === "6gb above 64gb storage" && <> <Oneplus_4 />
+<Oneplus_5 /> <Oneplus_6/>  </>
+}
+{selected === "oneplus" && price === "above 40000" && genere === "speedy" && show && ram === "6gb above 64gb storage" && <> <Oneplus_4 />
+<Oneplus_5 /> <Oneplus_6/>  </>
+}
+{selected === "oneplus" && price === "above 40000" && genere === "gaming" && show && ram === "6gb above 64gb storage" && <> <Oneplus_4 />
+<Oneplus_5 /> <Oneplus_6/>  </>
+}
+{selected === "oneplus" && price === "above 40000" && genere === "speedy" && show && ram === "8gb above 128gb storage" && <> <Oneplus_4 />
+<Oneplus_5 /> <Oneplus_6/>  </>
+}
+{selected === "oneplus" && price === "above 40000" && genere === "gaming" && show && ram === "8gb above 128gb storage" && <> <Oneplus_4 />
+<Oneplus_5 /> <Oneplus_6/>  </>
+}
+{selected === "oneplus" && price === "above 40000" && genere === "normal" && show && ram === "8gb above 128gb storage" && <> <Oneplus_4 />
+<Oneplus_5 /> <Oneplus_6/>  </>
+}
+
+
+{/* one plus above 20000 */}
+
+{selected === "oneplus" && price === "above 20000" && genere === "gaming" && show && ram === "6gb above 128gb storage" && <> <Oneplus_7 />
+<Oneplus_8 /> <Oneplus_9/>  </>
+}
+{selected === "oneplus" && price === "above 20000" && genere === "normal" && show && ram === "6gb above 128gb storage" && <> <Oneplus_7 />
+<Oneplus_8 /> <Oneplus_9/>  </>
+}
+{selected === "oneplus" && price === "above 20000" && genere === "speedy" && show && ram === "6gb above 128gb storage" && <> <Oneplus_7 />
+<Oneplus_8 /> <Oneplus_9/>  </>
+}
+{selected === "oneplus" && price === "above 20000" && genere === "normal" && show && ram === "6gb above 64gb storage" && <> <Oneplus_7 />
+<Oneplus_8 /> <Oneplus_9/>  </>
+}
+{selected === "oneplus" && price === "above 20000" && genere === "speedy" && show && ram === "6gb above 64gb storage" && <> <Oneplus_7 />
+<Oneplus_8 /> <Oneplus_9/>  </>
+}
+{selected === "oneplus" && price === "above 20000" && genere === "gaming" && show && ram === "6gb above 64gb storage" && <> <Oneplus_7 />
+<Oneplus_8 /> <Oneplus_9/>  </>
+}
+{selected === "oneplus" && price === "above 20000" && genere === "speedy" && show && ram === "8gb above 128gb storage" && <> <Oneplus_7 />
+<Oneplus_8 /> <Oneplus_9/>  </>
+}
+{selected === "oneplus" && price === "above 20000" && genere === "gaming" && show && ram === "8gb above 128gb storage" && <> <Oneplus_7 />
+<Oneplus_8 /> <Oneplus_9/>  </>
+}
+{selected === "oneplus" && price === "above 20000" && genere === "normal" && show && ram === "8gb above 128gb storage" && <> <Oneplus_7 />
+<Oneplus_8 /> <Oneplus_9/>  </>
+}
 
 
 

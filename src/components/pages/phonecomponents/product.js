@@ -1,5 +1,5 @@
 import React, {Component, useState} from 'react'
-
+import './product.css';
 function Product({choice, device, url,specs,youtube,blog,seller,gaming,tech}) {
 
  
@@ -282,60 +282,7 @@ function Product({choice, device, url,specs,youtube,blog,seller,gaming,tech}) {
           </div>
         </div>  
           ))}
- {/*  <div className="accordion-item">
-    <h2 className="accordion-header" id="flush-headingOne">
-      <button className="accordion-button collapsed text-white bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-      <figure className="text-center ">
-      <blockquote className="blockquote ">
-        <h2 className="msg-heading-1 text-light">SnapDragon</h2>
-      </blockquote>
-    </figure>
-      </button>
-    </h2>
-    <div id="flush-collapseOne" className="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-      <div className="accordion-body"><figure className="text-center ">
-    <blockquote className="blockquote ">
-      <p className="h1 msg-3 text-white"><b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus eum laudantium eos, dolorem soluta facilis officiis culpa excepturi atque sunt consectetur recusandae eveniet doloremque corporis labore aliquam inventore in quis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim repudiandae iusto quis. Omnis voluptate quidem sint veniam, dolorem aliquam accusantium totam. Reprehenderit dolores facilis beatae tenetur, autem perspiciatis amet temporibus?</b></p>
-    </blockquote>
-  </figure></div>
-    </div>
-  </div>
-  <div className="accordion-item">
-    <h2 className="accordion-header" id="flush-headingTwo">
-      <button className="accordion-button collapsed text-white bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-      <figure className="text-center ">
-      <blockquote className="blockquote ">
-        <h2 className="msg-heading-1 text-light">Oxygen os</h2>
-      </blockquote>
-    </figure>
-      </button>
-    </h2>
-    <div id="flush-collapseTwo" className="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-      <div className="accordion-body"><figure className="text-center ">
-    <blockquote className="blockquote ">
-      <p className="h1 msg-3 text-white"><b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus eum laudantium eos, dolorem soluta facilis officiis culpa excepturi atque sunt consectetur recusandae eveniet doloremque corporis labore aliquam inventore in quis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim repudiandae iusto quis. Omnis voluptate quidem sint veniam, dolorem aliquam accusantium totam. Reprehenderit dolores facilis beatae tenetur, autem perspiciatis amet temporibus?</b></p>
-    </blockquote>
-  </figure></div>
-    </div>
-  </div>
-  <div className="accordion-item">
-    <h2 className="accordion-header" id="flush-headingThree">
-      <button className="accordion-button collapsed text-white bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-      <figure className="text-center ">
-      <blockquote className="blockquote ">
-        <h2 className="msg-heading-1 text-light">90 hz Fluid AMOLED 6.55" Display</h2>
-      </blockquote>
-    </figure>
-      </button>
-    </h2>
-    <div id="flush-collapseThree" className="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-      <div className="accordion-body"><figure className="text-center ">
-    <blockquote className="blockquote ">
-      <p className="h1 msg-3 text-white"><b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus eum laudantium eos, dolorem soluta facilis officiis culpa excepturi atque sunt consectetur recusandae eveniet doloremque corporis labore aliquam inventore in quis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim repudiandae iusto quis. Omnis voluptate quidem sint veniam, dolorem aliquam accusantium totam. Reprehenderit dolores facilis beatae tenetur, autem perspiciatis amet temporibus?</b></p>
-    </blockquote>
-  </figure></div>
-    </div>
-  </div> */}
+ 
 </div>
 
     </div>
