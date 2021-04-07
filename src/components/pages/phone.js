@@ -20,6 +20,18 @@ import Apple_6 from './phonecomponents/apple/apple_6';
 import Apple_7 from './phonecomponents/apple/apple_7';
 import Apple_8 from './phonecomponents/apple/apple_8';
 import Apple_9 from './phonecomponents/apple/apple_9';
+import Samsung_1 from './phonecomponents/samsung/samsung_1';
+import Samsung_2 from './phonecomponents/samsung/samsung_2';
+import Samsung_3 from './phonecomponents/samsung/samsung_3';
+import Samsung_4 from './phonecomponents/samsung/samsung_4';
+import Samsung_5 from './phonecomponents/samsung/samsung_5';
+import Samsung_6 from './phonecomponents/samsung/samsung_6';
+import Samsung_7 from './phonecomponents/samsung/samsung_7';
+import Samsung_8 from './phonecomponents/samsung/samsung_8';
+import Samsung_9 from './phonecomponents/samsung/samsung_9';
+import Samsung_12 from './phonecomponents/samsung/samsung_12';
+import Samsung_11 from './phonecomponents/samsung/samsung_11';
+import Samsung_10 from './phonecomponents/samsung/samsung_10';
 
 
 function Phones () {
@@ -235,6 +247,84 @@ function Phones () {
 {selected === "Apple" && price === "above 50000" && genere === "speedy" && show && ram === "above 2gb storage" && <>  <Apple_7 /><Apple_8/> <Apple_9/>  </>}
 {selected === "Apple" && price === "above 50000" && genere === "gaming" && show && ram === "above 2gb storage" && <>  <Apple_7 /><Apple_8/> <Apple_9/>  </>}
 {selected === "Apple" && price === "above 50000" && genere === "normal" && show && ram === "above 2gb storage" && <>  <Apple_7 /><Apple_8/> <Apple_9/>  </>}
+
+
+{/* samsung above 10000 */}
+
+{selected === "samsung" && price === "above 10000" && genere === "gaming" && show && ram === "6gb above 64gb storage/memorycard" && <> <Samsung_1 /><Samsung_2 /> <Samsung_3/>  </>}
+{selected === "samsung" && price === "above 10000" && genere === "normal" && show && ram === "6gb above 64gb storage/memorycard" && <> <Samsung_1 /><Samsung_2 /> <Samsung_3/>  </>}
+{selected === "samsung" && price === "above 10000" && genere === "speedy" && show && ram === "6gb above 64gb storage/memorycard" && <> <Samsung_1 /><Samsung_2 /> <Samsung_3/>  </>}
+{selected === "samsung" && price === "above 10000" && genere === "both"   && show && ram === "6gb above 64gb storage/memorycard" && <> <Samsung_1 /><Samsung_2 /> <Samsung_3/>  </>}
+{selected === "samsung" && price === "above 10000" && genere === "normal" && show && ram === "6gb above 128gb storage" && <>           <Samsung_1 /><Samsung_2 /> <Samsung_3/>  </>}
+{selected === "samsung" && price === "above 10000" && genere === "speedy" && show && ram === "6gb above 128gb storage" && <>           <Samsung_1 /><Samsung_2 /> <Samsung_3/>  </>}
+{selected === "samsung" && price === "above 10000" && genere === "gaming" && show && ram === "6gb above 128gb storage" && <>           <Samsung_1 /><Samsung_2 /> <Samsung_3/>  </>}
+{selected === "samsung" && price === "above 10000" && genere === "both"   && show && ram === "6gb above 128gb storage" && <>           <Samsung_1 /><Samsung_2 /> <Samsung_3/>  </>}
+{selected === "samsung" && price === "above 10000" && genere === "speedy" && show && ram === "6gb above 256gb storage" && <>           <Samsung_1 /><Samsung_2 /> <Samsung_3/>  </>}
+{selected === "samsung" && price === "above 10000" && genere === "gaming" && show && ram === "6gb above 256gb storage" && <>           <Samsung_1 /><Samsung_2 /> <Samsung_3/>  </>}
+{selected === "samsung" && price === "above 10000" && genere === "normal" && show && ram === "6gb above 256gb storage" && <>           <Samsung_1 /><Samsung_2 /> <Samsung_3/>  </>}
+{selected === "samsung" && price === "above 10000" && genere === "both"   && show && ram === "6gb above 256gb storage" && <>           <Samsung_1 /><Samsung_2 /> <Samsung_3/>  </>}
+{selected === "samsung" && price === "above 10000" && genere === "speedy" && show && ram === "8gb above 256gb storage" && <>           <Samsung_1 /><Samsung_2 /> <Samsung_3/>  </>}
+{selected === "samsung" && price === "above 10000" && genere === "gaming" && show && ram === "8gb above 256gb storage" && <>           <Samsung_1 /><Samsung_2 /> <Samsung_3/>  </>}
+{selected === "samsung" && price === "above 10000" && genere === "normal" && show && ram === "8gb above 256gb storage" && <>           <Samsung_1 /><Samsung_2 /> <Samsung_3/>  </>}
+{selected === "samsung" && price === "above 10000" && genere === "both"   && show && ram === "8gb above 256gb storage" && <>           <Samsung_1 /><Samsung_2 /> <Samsung_3/>  </>}
+
+
+{/* samsung above 20000 */}
+
+{selected === "samsung" && price === "above 20000" && genere === "gaming" && show && ram === "6gb above 64gb storage/memorycard" && <> <Samsung_4 /><Samsung_5 /> <Samsung_6/>  </>}
+{selected === "samsung" && price === "above 20000" && genere === "normal" && show && ram === "6gb above 64gb storage/memorycard" && <> <Samsung_4 /><Samsung_5 /> <Samsung_6/>  </>}
+{selected === "samsung" && price === "above 20000" && genere === "speedy" && show && ram === "6gb above 64gb storage/memorycard" && <> <Samsung_4 /><Samsung_5 /> <Samsung_6/>  </>}
+{selected === "samsung" && price === "above 20000" && genere === "both"   && show && ram === "6gb above 64gb storage/memorycard" && <> <Samsung_4 /><Samsung_5 /> <Samsung_6/>  </>}
+{selected === "samsung" && price === "above 20000" && genere === "normal" && show && ram === "6gb above 128gb storage" && <>           <Samsung_4 /><Samsung_5 /> <Samsung_6/>  </>}
+{selected === "samsung" && price === "above 20000" && genere === "speedy" && show && ram === "6gb above 128gb storage" && <>           <Samsung_4 /><Samsung_5 /> <Samsung_6/>  </>}
+{selected === "samsung" && price === "above 20000" && genere === "gaming" && show && ram === "6gb above 128gb storage" && <>           <Samsung_4 /><Samsung_5 /> <Samsung_6/>  </>}
+{selected === "samsung" && price === "above 20000" && genere === "both"   && show && ram === "6gb above 128gb storage" && <>           <Samsung_4 /><Samsung_5 /> <Samsung_6/>  </>}
+{selected === "samsung" && price === "above 20000" && genere === "speedy" && show && ram === "6gb above 256gb storage" && <>           <Samsung_4 /><Samsung_5 /> <Samsung_6/>  </>}
+{selected === "samsung" && price === "above 20000" && genere === "gaming" && show && ram === "6gb above 256gb storage" && <>           <Samsung_4 /><Samsung_5 /> <Samsung_6/>  </>}
+{selected === "samsung" && price === "above 20000" && genere === "normal" && show && ram === "6gb above 256gb storage" && <>           <Samsung_4 /><Samsung_5 /> <Samsung_6/>  </>}
+{selected === "samsung" && price === "above 20000" && genere === "both"   && show && ram === "6gb above 256gb storage" && <>           <Samsung_4 /><Samsung_5 /> <Samsung_6/>  </>}
+{selected === "samsung" && price === "above 20000" && genere === "speedy" && show && ram === "8gb above 256gb storage" && <>           <Samsung_4 /><Samsung_5 /> <Samsung_6/>  </>}
+{selected === "samsung" && price === "above 20000" && genere === "gaming" && show && ram === "8gb above 256gb storage" && <>           <Samsung_4 /><Samsung_5 /> <Samsung_6/>  </>}
+{selected === "samsung" && price === "above 20000" && genere === "normal" && show && ram === "8gb above 256gb storage" && <>           <Samsung_4 /><Samsung_5 /> <Samsung_6/>  </>}
+{selected === "samsung" && price === "above 20000" && genere === "both"   && show && ram === "8gb above 256gb storage" && <>           <Samsung_4 /><Samsung_5 /> <Samsung_6/>  </>}
+
+{/*  samsung above 30000 */}
+
+{selected === "samsung" && price === "above 30000" && genere === "gaming" && show && ram === "6gb above 64gb storage/memorycard" && <> <Samsung_7 /><Samsung_8 /> <Samsung_9/>  </>}
+{selected === "samsung" && price === "above 30000" && genere === "normal" && show && ram === "6gb above 64gb storage/memorycard" && <> <Samsung_7 /><Samsung_8 /> <Samsung_9/>  </>}
+{selected === "samsung" && price === "above 30000" && genere === "speedy" && show && ram === "6gb above 64gb storage/memorycard" && <> <Samsung_7 /><Samsung_8 /> <Samsung_9/>  </>}
+{selected === "samsung" && price === "above 30000" && genere === "both"   && show && ram === "6gb above 64gb storage/memorycard" && <> <Samsung_7 /><Samsung_8 /> <Samsung_9/>  </>}
+{selected === "samsung" && price === "above 30000" && genere === "normal" && show && ram === "6gb above 128gb storage" && <>           <Samsung_7 /><Samsung_8 /> <Samsung_9/>  </>}
+{selected === "samsung" && price === "above 30000" && genere === "speedy" && show && ram === "6gb above 128gb storage" && <>           <Samsung_7 /><Samsung_8 /> <Samsung_9/>  </>}
+{selected === "samsung" && price === "above 30000" && genere === "gaming" && show && ram === "6gb above 128gb storage" && <>           <Samsung_7 /><Samsung_8 /> <Samsung_9/>  </>}
+{selected === "samsung" && price === "above 30000" && genere === "both"   && show && ram === "6gb above 128gb storage" && <>           <Samsung_7 /><Samsung_8 /> <Samsung_9/>  </>}
+{selected === "samsung" && price === "above 30000" && genere === "speedy" && show && ram === "6gb above 256gb storage" && <>           <Samsung_7 /><Samsung_8 /> <Samsung_9/>  </>}
+{selected === "samsung" && price === "above 30000" && genere === "gaming" && show && ram === "6gb above 256gb storage" && <>           <Samsung_7 /><Samsung_8 /> <Samsung_9/>  </>}
+{selected === "samsung" && price === "above 30000" && genere === "normal" && show && ram === "6gb above 256gb storage" && <>           <Samsung_7 /><Samsung_8 /> <Samsung_9/>  </>}
+{selected === "samsung" && price === "above 30000" && genere === "both"   && show && ram === "6gb above 256gb storage" && <>           <Samsung_7 /><Samsung_8 /> <Samsung_9/>  </>}
+{selected === "samsung" && price === "above 30000" && genere === "speedy" && show && ram === "8gb above 256gb storage" && <>           <Samsung_7 /><Samsung_8 /> <Samsung_9/>  </>}
+{selected === "samsung" && price === "above 30000" && genere === "gaming" && show && ram === "8gb above 256gb storage" && <>           <Samsung_7 /><Samsung_8 /> <Samsung_9/>  </>}
+{selected === "samsung" && price === "above 30000" && genere === "normal" && show && ram === "8gb above 256gb storage" && <>           <Samsung_7 /><Samsung_8 /> <Samsung_9/>  </>}
+{selected === "samsung" && price === "above 30000" && genere === "both"   && show && ram === "8gb above 256gb storage" && <>           <Samsung_7 /><Samsung_8 /> <Samsung_9/>  </>}
+
+{/* samsung above 40000 */}
+
+{selected === "samsung" && price === "above 40000" && genere === "normal" && show && ram === "6gb above 64gb storage/memorycard" && <> <Samsung_10 /><Samsung_11 /> <Samsung_12/>  </>}
+{selected === "samsung" && price === "above 40000" && genere === "speedy" && show && ram === "6gb above 64gb storage/memorycard" && <> <Samsung_10 /><Samsung_11 /> <Samsung_12/>  </>}
+{selected === "samsung" && price === "above 40000" && genere === "both"   && show && ram === "6gb above 64gb storage/memorycard" && <> <Samsung_10 /><Samsung_11 /> <Samsung_12/>  </>}
+{selected === "samsung" && price === "above 40000" && genere === "normal" && show && ram === "6gb above 128gb storage" && <>           <Samsung_10 /><Samsung_11 /> <Samsung_12/>  </>}
+{selected === "samsung" && price === "above 40000" && genere === "gaming" && show && ram === "6gb above 64gb storage/memorycard" && <> <Samsung_10 /><Samsung_11 /> <Samsung_12/>  </>}
+{selected === "samsung" && price === "above 40000" && genere === "speedy" && show && ram === "6gb above 128gb storage" && <>           <Samsung_10 /><Samsung_11 /> <Samsung_12/>  </>}
+{selected === "samsung" && price === "above 40000" && genere === "gaming" && show && ram === "6gb above 128gb storage" && <>           <Samsung_10 /><Samsung_11 /> <Samsung_12/>  </>}
+{selected === "samsung" && price === "above 40000" && genere === "both"   && show && ram === "6gb above 128gb storage" && <>           <Samsung_10 /><Samsung_11 /> <Samsung_12/>  </>}
+{selected === "samsung" && price === "above 40000" && genere === "speedy" && show && ram === "6gb above 256gb storage" && <>           <Samsung_10 /><Samsung_11 /> <Samsung_12/>  </>}
+{selected === "samsung" && price === "above 40000" && genere === "gaming" && show && ram === "6gb above 256gb storage" && <>           <Samsung_10 /><Samsung_11 /> <Samsung_12/>  </>}
+{selected === "samsung" && price === "above 40000" && genere === "normal" && show && ram === "6gb above 256gb storage" && <>           <Samsung_10 /><Samsung_11 /> <Samsung_12/>  </>}
+{selected === "samsung" && price === "above 40000" && genere === "both"   && show && ram === "6gb above 256gb storage" && <>           <Samsung_10 /><Samsung_11 /> <Samsung_12/>  </>}
+{selected === "samsung" && price === "above 40000" && genere === "speedy" && show && ram === "8gb above 256gb storage" && <>           <Samsung_10 /><Samsung_11 /> <Samsung_12/>  </>}
+{selected === "samsung" && price === "above 40000" && genere === "gaming" && show && ram === "8gb above 256gb storage" && <>           <Samsung_10 /><Samsung_11 /> <Samsung_12/>  </>}
+{selected === "samsung" && price === "above 40000" && genere === "normal" && show && ram === "8gb above 256gb storage" && <>           <Samsung_10 /><Samsung_11 /> <Samsung_12/>  </>}
+{selected === "samsung" && price === "above 40000" && genere === "both"   && show && ram === "8gb above 256gb storage" && <>           <Samsung_10 /><Samsung_11 /> <Samsung_12/>  </>}
 
 
 
