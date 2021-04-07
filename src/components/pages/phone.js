@@ -11,6 +11,15 @@ import Oneplus_6 from './phonecomponents/oneplus/oneplus_6';
 import Oneplus_7 from './phonecomponents/oneplus/oneplus_7';
 import Oneplus_8 from './phonecomponents/oneplus/oneplus_8';
 import Oneplus_9 from './phonecomponents/oneplus/oneplus_9';
+import Apple_1 from './phonecomponents/apple/apple_1';
+import Apple_2 from './phonecomponents/apple/apple_2';
+import Apple_3 from './phonecomponents/apple/apple_3';
+import Apple_4 from './phonecomponents/apple/apple_4';
+import Apple_5 from './phonecomponents/apple/apple_5';
+import Apple_6 from './phonecomponents/apple/apple_6';
+import Apple_7 from './phonecomponents/apple/apple_7';
+import Apple_8 from './phonecomponents/apple/apple_8';
+import Apple_9 from './phonecomponents/apple/apple_9';
 
 
 function Phones () {
@@ -153,104 +162,79 @@ function Phones () {
 
 
 {/* oneplus above 30000 */}
-{selected === "oneplus" && price === "above 30000" && genere === "gaming" && show && ram === "6gb above 128gb storage" && <> <Oneplus_1 />
-<Oneplus_2 /> <Oneplus_3/>  </>
-}
-{selected === "oneplus" && price === "above 30000" && genere === "normal" && show && ram === "6gb above 128gb storage" && <> <Oneplus_1 />
-<Oneplus_2 /> <Oneplus_3/>  </>
-}
-{selected === "oneplus" && price === "above 30000" && genere === "speedy" && show && ram === "6gb above 128gb storage" && <> <Oneplus_1 />
-<Oneplus_2 /> <Oneplus_3/>  </>
-}
-{selected === "oneplus" && price === "above 30000" && genere === "normal" && show && ram === "6gb above 64gb storage" && <> <Oneplus_1 />
-<Oneplus_2 /> <Oneplus_3/>  </>
-}
-{selected === "oneplus" && price === "above 30000" && genere === "speedy" && show && ram === "6gb above 64gb storage" && <> <Oneplus_1 />
-<Oneplus_2 /> <Oneplus_3/>  </>
-}
-{selected === "oneplus" && price === "above 30000" && genere === "gaming" && show && ram === "6gb above 64gb storage" && <> <Oneplus_1 />
-<Oneplus_2 /> <Oneplus_3/>  </>
-}
-{selected === "oneplus" && price === "above 30000" && genere === "speedy" && show && ram === "8gb above 128gb storage" && <> <Oneplus_1 />
-<Oneplus_2 /> <Oneplus_3/>  </>
-}
-{selected === "oneplus" && price === "above 30000" && genere === "gaming" && show && ram === "8gb above 128gb storage" && <> <Oneplus_1 />
-<Oneplus_2 /> <Oneplus_3/>  </>
-}
-{selected === "oneplus" && price === "above 30000" && genere === "normal" && show && ram === "8gb above 128gb storage" && <> <Oneplus_1 />
-<Oneplus_2 /> <Oneplus_3/>  </>
-}
+{selected === "oneplus" && price === "above 30000" && genere === "gaming" && show && ram === "6gb above 128gb storage" && <> <Oneplus_1 /><Oneplus_2 /> <Oneplus_3/>  </>}
+{selected === "oneplus" && price === "above 30000" && genere === "normal" && show && ram === "6gb above 128gb storage" && <> <Oneplus_1 /><Oneplus_2 /> <Oneplus_3/>  </>}
+{selected === "oneplus" && price === "above 30000" && genere === "speedy" && show && ram === "6gb above 128gb storage" && <> <Oneplus_1 /><Oneplus_2 /> <Oneplus_3/>  </>}
+{selected === "oneplus" && price === "above 30000" && genere === "normal" && show && ram === "6gb above 64gb storage" && <> <Oneplus_1 /><Oneplus_2 /> <Oneplus_3/>  </>}
+{selected === "oneplus" && price === "above 30000" && genere === "speedy" && show && ram === "6gb above 64gb storage" && <> <Oneplus_1 /><Oneplus_2 /> <Oneplus_3/>  </>}
+{selected === "oneplus" && price === "above 30000" && genere === "gaming" && show && ram === "6gb above 64gb storage" && <> <Oneplus_1 /><Oneplus_2 /> <Oneplus_3/>  </>}
+{selected === "oneplus" && price === "above 30000" && genere === "speedy" && show && ram === "8gb above 128gb storage" && <> <Oneplus_1 /><Oneplus_2 /> <Oneplus_3/>  </>}
+{selected === "oneplus" && price === "above 30000" && genere === "gaming" && show && ram === "8gb above 128gb storage" && <> <Oneplus_1 /><Oneplus_2 /> <Oneplus_3/>  </>}
+{selected === "oneplus" && price === "above 30000" && genere === "normal" && show && ram === "8gb above 128gb storage" && <> <Oneplus_1 /><Oneplus_2 /> <Oneplus_3/>  </>}
 
 
 
 
 {/*oneplus above 40000  */}
-{selected === "oneplus" && price === "above 40000" && genere === "gaming" && show && ram === "6gb above 128gb storage" && <> <Oneplus_4 />
-<Oneplus_5 /> <Oneplus_6/>  </>
-}
-{selected === "oneplus" && price === "above 40000" && genere === "normal" && show && ram === "6gb above 128gb storage" && <> <Oneplus_4 />
-<Oneplus_5 /> <Oneplus_6/>  </>
-}
-{selected === "oneplus" && price === "above 40000" && genere === "speedy" && show && ram === "6gb above 128gb storage" && <> <Oneplus_4 />
-<Oneplus_5 /> <Oneplus_6/>  </>
-}
-{selected === "oneplus" && price === "above 40000" && genere === "normal" && show && ram === "6gb above 64gb storage" && <> <Oneplus_4 />
-<Oneplus_5 /> <Oneplus_6/>  </>
-}
-{selected === "oneplus" && price === "above 40000" && genere === "speedy" && show && ram === "6gb above 64gb storage" && <> <Oneplus_4 />
-<Oneplus_5 /> <Oneplus_6/>  </>
-}
-{selected === "oneplus" && price === "above 40000" && genere === "gaming" && show && ram === "6gb above 64gb storage" && <> <Oneplus_4 />
-<Oneplus_5 /> <Oneplus_6/>  </>
-}
-{selected === "oneplus" && price === "above 40000" && genere === "speedy" && show && ram === "8gb above 128gb storage" && <> <Oneplus_4 />
-<Oneplus_5 /> <Oneplus_6/>  </>
-}
-{selected === "oneplus" && price === "above 40000" && genere === "gaming" && show && ram === "8gb above 128gb storage" && <> <Oneplus_4 />
-<Oneplus_5 /> <Oneplus_6/>  </>
-}
-{selected === "oneplus" && price === "above 40000" && genere === "normal" && show && ram === "8gb above 128gb storage" && <> <Oneplus_4 />
-<Oneplus_5 /> <Oneplus_6/>  </>
-}
+{selected === "oneplus" && price === "above 40000" && genere === "gaming" && show && ram === "6gb above 128gb storage" && <> <Oneplus_4 /><Oneplus_5 /> <Oneplus_6/>  </>}
+{selected === "oneplus" && price === "above 40000" && genere === "normal" && show && ram === "6gb above 128gb storage" && <> <Oneplus_4 /><Oneplus_5 /> <Oneplus_6/>  </>}
+{selected === "oneplus" && price === "above 40000" && genere === "speedy" && show && ram === "6gb above 128gb storage" && <> <Oneplus_4 /><Oneplus_5 /> <Oneplus_6/>  </>}
+{selected === "oneplus" && price === "above 40000" && genere === "normal" && show && ram === "6gb above 64gb storage" && <> <Oneplus_4 /><Oneplus_5 /> <Oneplus_6/>  </>}
+{selected === "oneplus" && price === "above 40000" && genere === "speedy" && show && ram === "6gb above 64gb storage" && <> <Oneplus_4 /><Oneplus_5 /> <Oneplus_6/>  </>}
+{selected === "oneplus" && price === "above 40000" && genere === "gaming" && show && ram === "6gb above 64gb storage" && <> <Oneplus_4 /><Oneplus_5 /> <Oneplus_6/>  </>}
+{selected === "oneplus" && price === "above 40000" && genere === "speedy" && show && ram === "8gb above 128gb storage" && <> <Oneplus_4 /><Oneplus_5 /> <Oneplus_6/>  </>}
+{selected === "oneplus" && price === "above 40000" && genere === "gaming" && show && ram === "8gb above 128gb storage" && <> <Oneplus_4 /><Oneplus_5 /> <Oneplus_6/>  </>}
+{selected === "oneplus" && price === "above 40000" && genere === "normal" && show && ram === "8gb above 128gb storage" && <> <Oneplus_4 /><Oneplus_5 /> <Oneplus_6/>  </>}
 
 
 {/* one plus above 20000 */}
 
-{selected === "oneplus" && price === "above 20000" && genere === "gaming" && show && ram === "6gb above 128gb storage" && <> <Oneplus_7 />
-<Oneplus_8 /> <Oneplus_9/>  </>
-}
-{selected === "oneplus" && price === "above 20000" && genere === "normal" && show && ram === "6gb above 128gb storage" && <> <Oneplus_7 />
-<Oneplus_8 /> <Oneplus_9/>  </>
-}
-{selected === "oneplus" && price === "above 20000" && genere === "speedy" && show && ram === "6gb above 128gb storage" && <> <Oneplus_7 />
-<Oneplus_8 /> <Oneplus_9/>  </>
-}
-{selected === "oneplus" && price === "above 20000" && genere === "normal" && show && ram === "6gb above 64gb storage" && <> <Oneplus_7 />
-<Oneplus_8 /> <Oneplus_9/>  </>
-}
-{selected === "oneplus" && price === "above 20000" && genere === "speedy" && show && ram === "6gb above 64gb storage" && <> <Oneplus_7 />
-<Oneplus_8 /> <Oneplus_9/>  </>
-}
-{selected === "oneplus" && price === "above 20000" && genere === "gaming" && show && ram === "6gb above 64gb storage" && <> <Oneplus_7 />
-<Oneplus_8 /> <Oneplus_9/>  </>
-}
-{selected === "oneplus" && price === "above 20000" && genere === "speedy" && show && ram === "8gb above 128gb storage" && <> <Oneplus_7 />
-<Oneplus_8 /> <Oneplus_9/>  </>
-}
-{selected === "oneplus" && price === "above 20000" && genere === "gaming" && show && ram === "8gb above 128gb storage" && <> <Oneplus_7 />
-<Oneplus_8 /> <Oneplus_9/>  </>
-}
-{selected === "oneplus" && price === "above 20000" && genere === "normal" && show && ram === "8gb above 128gb storage" && <> <Oneplus_7 />
-<Oneplus_8 /> <Oneplus_9/>  </>
-}
+{selected === "oneplus" && price === "above 20000" && genere === "gaming" && show && ram === "6gb above 128gb storage" && <> <Oneplus_7 /><Oneplus_8 /> <Oneplus_9/>  </>}
+{selected === "oneplus" && price === "above 20000" && genere === "normal" && show && ram === "6gb above 128gb storage" && <> <Oneplus_7 /><Oneplus_8 /> <Oneplus_9/>  </>}
+{selected === "oneplus" && price === "above 20000" && genere === "speedy" && show && ram === "6gb above 128gb storage" && <> <Oneplus_7 /><Oneplus_8 /> <Oneplus_9/>  </>}
+{selected === "oneplus" && price === "above 20000" && genere === "normal" && show && ram === "6gb above 64gb storage" && <> <Oneplus_7 /><Oneplus_8 /> <Oneplus_9/>  </>}
+{selected === "oneplus" && price === "above 20000" && genere === "speedy" && show && ram === "6gb above 64gb storage" && <> <Oneplus_7 /><Oneplus_8 /> <Oneplus_9/>  </>}
+{selected === "oneplus" && price === "above 20000" && genere === "gaming" && show && ram === "6gb above 64gb storage" && <> <Oneplus_7 /><Oneplus_8 /> <Oneplus_9/>  </>}
+{selected === "oneplus" && price === "above 20000" && genere === "speedy" && show && ram === "8gb above 128gb storage" && <> <Oneplus_7 /><Oneplus_8 /> <Oneplus_9/>  </>}
+{selected === "oneplus" && price === "above 20000" && genere === "gaming" && show && ram === "8gb above 128gb storage" && <> <Oneplus_7 /><Oneplus_8 /> <Oneplus_9/>  </>}
+{selected === "oneplus" && price === "above 20000" && genere === "normal" && show && ram === "8gb above 128gb storage" && <> <Oneplus_7 /><Oneplus_8 /> <Oneplus_9/>  </>}
+
+{/* apple above 30000 */}
+
+{selected === "Apple" && price === "above 30000" && genere === "gaming" && show && ram === "above 64gb storage" && <> <Apple_1 /><Apple_2 /> <Apple_3/>  </>}
+{selected === "Apple" && price === "above 30000" && genere === "normal" && show && ram === "above 64gb storage" && <> <Apple_1 /><Apple_2 /> <Apple_3/>  </>}
+{selected === "Apple" && price === "above 30000" && genere === "speedy" && show && ram === "above 64gb storage" && <> <Apple_1 /><Apple_2 /> <Apple_3/>  </>}
+{selected === "Apple" && price === "above 30000" && genere === "normal" && show && ram === "above 128gb storage" && <><Apple_1 /><Apple_2 /> <Apple_3/>  </>}
+{selected === "Apple" && price === "above 30000" && genere === "speedy" && show && ram === "above 128gb storage" && <><Apple_1 /><Apple_2 /> <Apple_3/>  </>}
+{selected === "Apple" && price === "above 30000" && genere === "gaming" && show && ram === "above 128gb storage" && <><Apple_1 /><Apple_2 /> <Apple_3/>  </>}
+{selected === "Apple" && price === "above 30000" && genere === "speedy" && show && ram === "above 2gb storage" && <>  <Apple_1 /><Apple_2 /> <Apple_3/>  </>}
+{selected === "Apple" && price === "above 30000" && genere === "gaming" && show && ram === "above 2gb storage" && <>  <Apple_1 /><Apple_2 /> <Apple_3/>  </>}
+{selected === "Apple" && price === "above 30000" && genere === "normal" && show && ram === "above 2gb storage" && <>  <Apple_1 /><Apple_2 /> <Apple_3/>  </>}
+
+{/* apple above 40000 */}
+
+{selected === "Apple" && price === "above 40000" && genere === "gaming" && show && ram === "above 64gb storage" && <> <Apple_4 /><Apple_5 /> <Apple_6/>  </>}
+{selected === "Apple" && price === "above 40000" && genere === "normal" && show && ram === "above 64gb storage" && <> <Apple_4 /><Apple_5 /> <Apple_6/>  </>}
+{selected === "Apple" && price === "above 40000" && genere === "speedy" && show && ram === "above 64gb storage" && <> <Apple_4 /><Apple_5 /> <Apple_6/>  </>}
+{selected === "Apple" && price === "above 40000" && genere === "normal" && show && ram === "above 128gb storage" && <><Apple_4 /><Apple_5 /> <Apple_6/>  </>}
+{selected === "Apple" && price === "above 40000" && genere === "speedy" && show && ram === "above 128gb storage" && <><Apple_4 /><Apple_5 /> <Apple_6/>  </>}
+{selected === "Apple" && price === "above 40000" && genere === "gaming" && show && ram === "above 128gb storage" && <><Apple_4 /><Apple_5 /> <Apple_6/>  </>}
+{selected === "Apple" && price === "above 40000" && genere === "speedy" && show && ram === "above 2gb storage" && <>  <Apple_4 /><Apple_5 /> <Apple_6/>  </>}
+{selected === "Apple" && price === "above 40000" && genere === "gaming" && show && ram === "above 2gb storage" && <>  <Apple_4 /><Apple_5 /> <Apple_6/>  </>}
+{selected === "Apple" && price === "above 40000" && genere === "normal" && show && ram === "above 2gb storage" && <>  <Apple_4 /><Apple_5 /> <Apple_6/>  </>}
 
 
+{/* apple above 50000 */}
 
-
-
-
-
-
+{selected === "Apple" && price === "above 50000" && genere === "gaming" && show && ram === "above 64gb storage" && <> <Apple_7 /><Apple_8/> <Apple_9/>  </>}
+{selected === "Apple" && price === "above 50000" && genere === "normal" && show && ram === "above 64gb storage" && <> <Apple_7 /><Apple_8/> <Apple_9/>  </>}
+{selected === "Apple" && price === "above 50000" && genere === "speedy" && show && ram === "above 64gb storage" && <> <Apple_7 /><Apple_8/> <Apple_9/>  </>}
+{selected === "Apple" && price === "above 50000" && genere === "normal" && show && ram === "above 128gb storage" && <><Apple_7 /><Apple_8/> <Apple_9/>  </>}
+{selected === "Apple" && price === "above 50000" && genere === "speedy" && show && ram === "above 128gb storage" && <><Apple_7 /><Apple_8/> <Apple_9/>  </>}
+{selected === "Apple" && price === "above 50000" && genere === "gaming" && show && ram === "above 128gb storage" && <><Apple_7 /><Apple_8/> <Apple_9/>  </>}
+{selected === "Apple" && price === "above 50000" && genere === "speedy" && show && ram === "above 2gb storage" && <>  <Apple_7 /><Apple_8/> <Apple_9/>  </>}
+{selected === "Apple" && price === "above 50000" && genere === "gaming" && show && ram === "above 2gb storage" && <>  <Apple_7 /><Apple_8/> <Apple_9/>  </>}
+{selected === "Apple" && price === "above 50000" && genere === "normal" && show && ram === "above 2gb storage" && <>  <Apple_7 /><Apple_8/> <Apple_9/>  </>}
 
 
 
