@@ -6,10 +6,80 @@ h5{
     
 }
 
-.fa {
-    color: black;
-    display:flex;
-    justify-content: center;
-    padding-top: 20px;
-    
+
+.footer-row-wrapper {
+  background-color: #343A40;
+  color: white; }
+
+.favicons-wrapper {
+  display:block;
+  float: left;
+  padding: 0 5rem ;
+  margin-right: 50px;
+  margin-bottom: 0;
 }
+
+.fa-3x {
+  padding: 5px 3rem;
+  margin: 3px 0 ;
+  transition: 0.5 ease-in-out; }
+  .fa-3x:hover {
+    cursor: pointer;
+    transform: scale(1.1); }
+
+.footer-contact-form {
+  display: inline-block;
+  float: left;
+  padding: 20px; }
+
+.footer-logo-wrapper {
+  display: inline-block;
+  float: left;
+  margin-top: 80px; }
+
+.footer-logo {
+  width: 70%;
+  padding: 10px; }
+
+.form-group {
+  width: 40%;
+  padding: 5px;
+  display: block;
+  margin: auto; }
+
+.footer-contact-header {
+  text-align: center;
+  margin-bottom: 0; }
+
+.form-control {
+  background-color: #616A6B;
+  font-size: 18x;
+  padding: 5px;
+ }
+
+hr.footer-hr {
+
+  border: 1px solid #fff;
+  margin:none;
+ 
+ }
+
+.footer-contact-container {
+  display: block;
+  margin: auto; }
+
+.btn-primary {
+  display: block;
+  margin: auto;
+  padding:3px;
+ }
+
+.btn-wrapper-footer {
+  padding-top: 1rem; }
+
+h5.copyright-footer {
+  margin: 0 35px;
+  color: white;
+  padding-bottom: 1rem; }
+
+/*# sourceMappingURL=style.css.map */
