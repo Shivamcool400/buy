@@ -12,16 +12,15 @@ h5{
   color: white; }
 
 .favicons-wrapper {
-  display:block;
-  float: left;
-  padding: 0 5rem ;
-  margin-right: 50px;
-  margin-bottom: 0;
+  display:flex;
+  flex-direction: row;
+  padding: 5px 1rem ;
+  margin:0 auto;
+
 }
 
 .fa-3x {
-  padding: 5px 3rem;
-  margin: 3px 0 ;
+  padding: 3px 2rem;
   transition: 0.5 ease-in-out; }
   .fa-3x:hover {
     cursor: pointer;
@@ -34,7 +33,7 @@ h5{
 
 .footer-logo-wrapper {
   display: inline-block;
-  float: left;
+  float: right;
   margin-top: 80px; }
 
 .footer-logo {
