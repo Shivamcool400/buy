@@ -1,72 +1,75 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import './navbar.css';
-import Login from './pages/login'; 
+import Login from './pages/login';
 import { Link } from 'react-router-dom';
 import { useStateValue } from '../stateprovider';
 import Fire from '../firebase';
 
- 
+
 
 
 function Navbar() {
-  const [{user}, dispatch] = useStateValue();
+  const [{ user }, dispatch] = useStateValue();
 
   const handleLogout = () => {
-  Fire.auth().signOut();
-};
-    
-        return (
+    Fire.auth().signOut();
+  };
 
-           <nav className="navbar navbar-expand-lg scrolling-navbar">
-  <div className="container-fluid">
-    <a className="navbar-brand abc pt-2" href="/home"><b>BUY</b></a>
-    <button className="navbar-toggler abc" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-      <span className=""/><>
-  ☰
-</>
-
+  return (
+    <>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">BUY</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
     </button>
-    <div className="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul className="navbar-nav  ">
-        <li className="nav-item abc">
-          <a className="nav-link active pt-3" aria-current="page" href="/home">Home</a>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
         </li>
-        <li className="nav-item abc">
-          <a className="nav-link pt-3" href="/aboutus">About us!</a>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About Us</a>
         </li>
-        <li className="nav-item abc">
-          <a className="nav-link pt-3" href="/contactus">Contact us!</a>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact Us</a>
         </li>
-        <li className="nav-item abc">
-          
-          <Link to={!user && '/login'}>
-          <a className="nav-link pt-3" onClick={handleLogout} href="#">{user ? 'LogOut' : 'Login'}</a>
-          </Link>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            Our Services
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item nav-item" href="#">Phones</a></li>
+            <li><a class="dropdown-item nav-item" href="#">Laptops</a></li>
+            <li><a class="dropdown-item nav-item" href="#">Gaming Consoles</a></li>
+
+
+
+            <li className="dropdown-item nav-item">     
+            <Link to={!user && '/login'}>
+            <a className="nav-link pt-3" onClick={handleLogout} href="#">{user ? 'LogOut' : 'Login'}</a>
+            </Link>
+            </li>
+            <li className="dropdown-item nav-item">
+            <span className="nav-link pt-3">Hello {!user ? 'Guest' : user.email}</span>
+            </li>
+
+
+
+
+          </ul>
         </li>
-        <li className="nav-item abc">
-        <span className="nav-link pt-3">Hello {!user ? 'Guest' : user.email}</span>
-        </li>
-        <li className="nav-item abc">
-          <a className="nav-link pt-3 mx-5" href="/phones">Phones!</a>
-        </li>
-        <li className="nav-item abc">
-          <a className="nav-link pt-3 mx-5" href="/laptops">Laptops!</a>
-        </li>
-        <li className="nav-item abc">
-          <a className="nav-link pt-3 mx-5" href="/gamingconsoles">Gaming consoles!</a>
-        </li>
-        <li className="nav-item abc">
-          <a className="nav-link pt-3 mx-5" href="/accessories">Accessories!</a>
-        </li>
-        
       </ul>
     </div>
   </div>
 </nav>
-        
-        
-        );
-    
+
+</> 
+
+  );
+
 }
 
 export default Navbar;
